@@ -1,5 +1,5 @@
-name: template-course
-title: Template course
+name: course_simple_grove_examples
+title: Simple Grove Examples
 version: true
 # uncomment the prerelease: attribute when you want the version to be set as prerelease
 # prerelease: -beta
