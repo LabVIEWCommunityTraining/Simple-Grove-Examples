@@ -29,5 +29,5 @@ video::0-suR8HejsY[youtube]
 ****
 Navigate to >>Scratchpad>>Grove>>blah blah
 
-image::ROOT\images\Template\Template-1.png[]
+image::Template\Template-1.png[]
 ****
