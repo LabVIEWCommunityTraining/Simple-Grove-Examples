@@ -1,0 +1,2 @@
+= Grove Digital Inputs
+:page-toclevels: 1

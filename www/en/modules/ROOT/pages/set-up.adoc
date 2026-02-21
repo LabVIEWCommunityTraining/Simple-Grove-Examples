@@ -1,11 +1,52 @@
 = Set Up Instructions
+:page-toclevels: 1
 
+.Hardware Requirements
+:page-toclevels: 2
+****
+
+.Raspberry Pi Pico 2040 
+[%collapsible]
+====
+* https://thepihut.com/products/raspberry-pi-pico[Pihut UK]
+* https://uk.farnell.com/raspberry-pi/raspberry-pi-pico/mcu-board-rpi-pico-264kb-133mhz/dp/3643332[Farnell UK]
+====
+
+.Radxa X4 
+[%collapsible]
+====
+* https://thepihut.com/products/raspberry-pi-pico[Pihut UK]
+
+====
+
+
+
+
+
+
+
+****
+
+.Download Drivers
+:page-toclevels: 2
+****
 Download the latest drivers here
+* https://github.com/LabVIEWCommunityTraining/cti-drivers-lv-visa[cti-drivers-lv-visa]
+****
 
-== Download the course material
-
+.Download and install the CTI Pico firmware (UF2)
+:page-toclevels: 2
+****
+Download the latest CTI Pico firmware (UF2) here
 * https://github.com/LabVIEWCommunityTraining/cti-drivers-lv-visa[cti-drivers-lv-visa]
 
-== Download the CTI Pico firmware (UF2)
+Load firmware on the Pico by pressing the bootsel button and powering on the Pico.
+
+On a Radxa you will could run this script instead (mainly because the Bootsel button is a bit fiddly!)...
+
+On a Lattepanda Iota you can press the button here.
+
+****
+
 
 

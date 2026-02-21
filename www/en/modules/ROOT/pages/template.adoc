@@ -1,0 +1,33 @@
+= Template Title
+:page-toclevels: 1
+
+// Use this as a template for each new device page
+
+.Overview
+:page-toclevels: 2
+****
+Blah Blah Blah
+****
+
+.Hardware Details
+:page-toclevels: 2
+****
+Blah Blah Blah
+****
+
+.Demo Video
+:page-toclevels: 2
+****
+Here is a video that shows ....... blah blah
+
+video::0-suR8HejsY[youtube]
+
+****
+
+.Example Code
+:page-toclevels: 2
+****
+Navigate to >>Scratchpad>>Grove>>blah blah
+
+image::Template\Template-1.png[]
+****

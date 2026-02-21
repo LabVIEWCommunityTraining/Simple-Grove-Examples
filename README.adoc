@@ -1,5 +1,8 @@
-= Website Course Template
+= Simple Grove Examples
 
-This repository is the starting point for a new CTI course.
+This is a collection of drivers using the Grove interface standard (or adapted from them).
 
-Instruction to create a new course are available https://labviewcommunitytraining.github.io/www/en/new-course.html[here].
+* https://wiki.seeedstudio.com/Grove_System/[SEEED Grove System]
+
+
+
