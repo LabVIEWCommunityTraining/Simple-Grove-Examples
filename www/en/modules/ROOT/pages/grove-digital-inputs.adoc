@@ -24,7 +24,7 @@ https://wiki.seeedstudio.com/Grove-Dual-Button/#features[Grove Dual Button]
 ****
 Here is a video that shows the set-up and running of the Dual Button Digital Inputs
 
-video::0-suR8HejsY[youtube]
+video::ViA9pmmxI2Q[youtube]
 
 ****
 
