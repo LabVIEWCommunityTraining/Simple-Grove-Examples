@@ -1,49 +1,33 @@
-= Grove Digital Inputs
+= What is Grove
 :page-toclevels: 1
 
 .Overview
 :page-toclevels: 2
-****
-This example uses the grove button module but the source code is also applicable for other similar Grove Modules.
 
-The GPIO Pins used are [D16,D17],[D18,D19],[D20,D21]
+Grove is an inexpensive connection system for hobbyist micro-controllers (Pico, RPi and Arduino) and comes with a whole eco-system of boards and hats. This makes it very convenient for trainers and hobbyist engineers.
 
-image::general\GroveDigitalConnectionsPico.png[]
+https://wiki.seeedstudio.com/Grove_System/[SEEED Grove Website]
 
+.Digital Connectors
+:page-toclevels: 3
+image::GroveDigitalConnection.png[]
 
-****
+Connectors D16,D18,D20 are used for our examples and are wired as shown in Figure 1
 
-.Hardware Details
-:page-toclevels: 2
-****
-https://wiki.seeedstudio.com/Grove-Dual-Button/#features[Grove Dual Button]
-****
+.Analog Connectors
+:page-toclevels: 3
+image::GroveAnalogConnection.png[]
 
-.Demo Video
-:page-toclevels: 2
-****
-Here is a video that shows the set-up and running of the Dual Button Digital Inputs
+Connectors A0,A1,A2 are used for our examples and are wired similar to Figure 2
 
-video::0-suR8HejsY[youtube]
+.UART Connectors
+:page-toclevels: 3
+image::GroveUARTConnection.png[]
 
-****
+Connectors UART0 and UART1 are used for our examples and are wired as shown in Figure 3
 
-.Example Code
-:page-toclevels: 2
-****
-Navigate to >>Scratchpad>>Grove>>Digital Inputs>>Grove Digital In.vi
+.I2C Connectors
+:page-toclevels: 3
+image::GroveI2CConnection.png[]
 
-image::images\grove-digital-inputs\GroveDigitalInProject.png[]
-
-This particular VI uses the dual buttons. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
-
-You should now see the button indicators light up when the corresponding button is pressed. The Indicators use a transparent fill for the off state and a brighter Red or Green for the on state.
-
-Links to various other similar boards are also on the Front Panel.
-
-image::images\grove-digital-inputs\GroveDigitalInFP.png[]
-
-On the block diagram you can see that the selected Grove connector dictates the GPIO Pin and we then set the pin to [In]. Next we loop round and event structure and use the timeout to poll the digital inputs. Pressing Stop will fire the Stop event and exit the loop.
-
-image::images\grove-digital-inputs\GroveDigitalInBD.png[]
-****
+Connectors I2C0 and I2C1 are used for our examples and are wired as shown in Figure 4
