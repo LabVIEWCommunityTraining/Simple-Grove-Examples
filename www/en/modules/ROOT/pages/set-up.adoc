@@ -20,11 +20,6 @@
 ====
 
 
-
-
-
-
-
 ****
 
 .Download Drivers
@@ -34,19 +29,31 @@ Download the latest drivers here
 * https://github.com/LabVIEWCommunityTraining/cti-drivers-lv-visa[cti-drivers-lv-visa]
 ****
 
-.Download and install the CTI Pico firmware (UF2)
+Download and install the CTI Pico firmware (UF2)
 :page-toclevels: 2
-****
+
 Download the latest CTI Pico firmware (UF2) here
-* https://github.com/LabVIEWCommunityTraining/cti-drivers-lv-visa[cti-drivers-lv-visa]
+* https://github.com/LabVIEWCommunityTraining/cti-firmware/tags[UF2 Releases]
 
 Load firmware on the Pico by pressing the bootsel button and powering on the Pico.
 
-On a Radxa you will could run this script instead (mainly because the Bootsel button is a bit fiddly!)...
+On a Radxa you could run this script instead (mainly because the Bootsel button is a bit fiddly!)...
 
-On a Lattepanda Iota you can press the button here.
+.Reset Bash Script
+[%collapsible]
+====
+#! /bin/bash
 
-****
+gpioset gpiochip0 17=1
+
+gpioset gpiochip0 7=1
+
+sleep 1
+
+gpioset gpiochip0 17=0
+
+gpioset gpiochip0 7=0
+====
 
 
 

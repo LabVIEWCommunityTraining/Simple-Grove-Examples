@@ -33,7 +33,7 @@ video::0-suR8HejsY[youtube]
 ****
 Navigate to >>Scratchpad>>Grove>>Digital Inputs>>Grove Digital In.vi
 
-image::images\grove-digital-inputs\GroveDigitalInProject.png[]
+image::GroveDigitalInProject.png[]
 
 This particular VI uses the dual buttons. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
 
@@ -41,9 +41,9 @@ You should now see the button indicators light up when the corresponding button 
 
 Links to various other similar boards are also on the Front Panel.
 
-image::images\grove-digital-inputs\GroveDigitalInFP.png[]
+image::GroveDigitalInFP.png[]
 
 On the block diagram you can see that the selected Grove connector dictates the GPIO Pin and we then set the pin to [In]. Next we loop round and event structure and use the timeout to poll the digital inputs. Pressing Stop will fire the Stop event and exit the loop.
 
-image::images\grove-digital-inputs\GroveDigitalInBD.png[]
+image::GroveDigitalInBD.png[]
 ****
