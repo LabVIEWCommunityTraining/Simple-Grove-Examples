@@ -6,10 +6,7 @@ The focus is to provide enough toys to enable a prospective engineer or hobbyist
 
 Some Electronics knowledge would be useful, but hopefully the wealth of material available for these platforms can fill in the gaps. Videos will be provided to offer some real-world experience.
 
-== Download
-
-// do not include the PDF download link in the PDF itself. See 
-
+== Download PDF of Course
 ifeval::["{backend}" != "pdf"]
-* {site-url}/{page-component-name}/{page-component-version}/_exports/{page-component-name}.pdf[here]
+{site-url}/{page-component-name}/{page-component-version}/_exports/{page-component-name}-{page-component-version}.pdf[here]
 endif::[]
