@@ -1,19 +1,15 @@
 = Course overview
 
-In this section, add:
+This material is aimed at providing examples employing the CTI firmware, mainly implemented using the Grove platform. 
 
-- an overview of the content
-- the goals
-- the people targeted
-- the prerequisite knowledge
-- the recommended courses to take before and after
+The focus is to provide enough toys to enable a prospective engineer or hobbyist to start building things.
 
-NOTE: This page is the entry point of the course. 
+Some Electronics knowledge would be useful, but hopefully the wealth of material available for these platforms can fill in the gaps. Videos will be provided to offer some real-world experience.
 
 == Download
 
 // do not include the PDF download link in the PDF itself. See 
 
 ifeval::["{backend}" != "pdf"]
-* {site-url}/{page-component-name}/{page-component-version}/{page-component-name}.pdf[PDF version of the course]
+* {site-url}/{page-component-name}/{page-component-version}/_exports/{page-component-name}.pdf[here]
 endif::[]

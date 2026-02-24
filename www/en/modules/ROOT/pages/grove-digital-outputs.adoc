@@ -4,7 +4,7 @@
 .Overview
 :page-toclevels: 2
 ****
-This example uses the grove button module but the source code is also applicable for other similar Grove Modules.
+This example uses the LED module and the Relay module, the source code is also applicable for other similar Grove Modules.
 
 The GPIO Pins used are [D16,D17],[D18,D19],[D20,D21]
 
@@ -16,7 +16,9 @@ image::GroveDigitalConnectionsPico.png[]
 .Hardware Details
 :page-toclevels: 2
 ****
-https://wiki.seeedstudio.com/Grove-Dual-Button/#features[Grove Dual Button]
+https://wiki.seeedstudio.com/Grove-Red_LED/[Grove LED]
+
+https://wiki.seeedstudio.com/Grove-Relay/[Grove Relay]
 ****
 
 .Demo Video
