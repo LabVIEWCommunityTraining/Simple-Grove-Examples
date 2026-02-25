@@ -1,46 +1,37 @@
 = Set Up Instructions
 :page-toclevels: 1
 
-.Hardware Requirements
-:page-toclevels: 2
-****
-
-.Raspberry Pi Pico 2040 
-[%collapsible]
-====
-* https://thepihut.com/products/raspberry-pi-pico[Pihut UK]
-* https://uk.farnell.com/raspberry-pi/raspberry-pi-pico/mcu-board-rpi-pico-264kb-133mhz/dp/3643332[Farnell UK]
-====
-
-.Radxa X4 
-[%collapsible]
-====
-* https://thepihut.com/products/raspberry-pi-pico[Pihut UK]
-
-====
+== Hardware Requirements
 
 
-****
+* Raspberry Pi Pico 2040 
+** https://thepihut.com/products/raspberry-pi-pico[Pihut UK]
+** https://uk.farnell.com/raspberry-pi/raspberry-pi-pico/mcu-board-rpi-pico-264kb-133mhz/dp/3643332[Farnell UK]
+* Radxa X4 
+** https://thepihut.com/products/raspberry-pi-pico[Pihut UK]
 
-.Download Drivers
-:page-toclevels: 2
-****
-Download the latest drivers here
+
+
+== Download the LabVIEW Drivers
+
+Download the latest drivers
+
 * https://github.com/LabVIEWCommunityTraining/cti-drivers-lv-visa[cti-drivers-lv-visa]
-****
 
-Download and install the CTI Pico firmware (UF2)
-:page-toclevels: 2
+== Download and install the CTI Pico firmware (UF2)
 
-Download the latest CTI Pico firmware (UF2) here
+. Download the latest CTI Pico firmware (UF2)
+
 * https://github.com/LabVIEWCommunityTraining/cti-firmware/tags[UF2 Releases]
 
-Load firmware on the Pico by pressing the bootsel button and powering on the Pico.
+. Load firmware on the Pico by pressing the bootsel button and powering on the Pico.
 
+[TIP]
+=====
 On a Radxa you could run this script instead (mainly because the Bootsel button is a bit fiddly!)...
 
 .Reset Bash Script
-[%collapsible]
+[source,shell]
 ====
 #! /bin/bash
 
@@ -55,5 +46,6 @@ gpioset gpiochip0 17=0
 gpioset gpiochip0 7=0
 ====
 
+=====
 
 
