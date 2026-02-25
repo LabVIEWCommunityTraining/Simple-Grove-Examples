@@ -1,33 +1,27 @@
 = Template Title
-:page-toclevels: 1
+:page-toclevels: 2
 
 // Use this as a template for each new device page
+// For more information about the asciidoc syntax go to https://labviewcommunitytraining.github.io/www/en/contributing.html#writing-conventions
 
-.Overview
-:page-toclevels: 2
-****
+== Overview
+
 Blah Blah Blah
-****
 
-.Hardware Details
-:page-toclevels: 2
-****
+== Hardware Details
+
 Blah Blah Blah
-****
 
-.Demo Video
-:page-toclevels: 2
-****
+== Demo Video
+
 Here is a video that shows ....... blah blah
 
 video::0-suR8HejsY[youtube]
 
-****
+== Example Code
 
-.Example Code
-:page-toclevels: 2
-****
-Navigate to >>Scratchpad>>Grove>>blah blah
+Navigate to menu:Scratchpad[Grove > X > Y.vi]
 
-image::Template\Template-1.png[]
-****
+// Image path is relative to the ../www/en/modules/ROOT/images folder
+
+image::Template-1.png[]
