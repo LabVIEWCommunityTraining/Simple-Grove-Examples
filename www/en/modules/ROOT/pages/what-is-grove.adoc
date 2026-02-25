@@ -1,33 +1,33 @@
 = What is Grove
 :page-toclevels: 1
 
-.Overview
-:page-toclevels: 2
+== Overview
+
 
 Grove is an inexpensive connection system for hobbyist micro-controllers (Pico, RPi and Arduino) and comes with a whole eco-system of boards and hats. This makes it very convenient for trainers and hobbyist engineers.
 
 https://wiki.seeedstudio.com/Grove_System/[SEEED Grove Website]
 
-.Digital Connectors
-:page-toclevels: 3
+=== Digital Connectors
+
 image::GroveDigitalConnection.png[]
 
 Connectors D16,D18,D20 are used for our examples and are wired as shown in Figure 1
 
-.Analog Connectors
-:page-toclevels: 3
+=== Analog Connectors
+
 image::GroveAnalogConnection.png[]
 
 Connectors A0,A1,A2 are used for our examples and are wired similar to Figure 2
 
-.UART Connectors
-:page-toclevels: 3
+=== UART Connectors
+
 image::GroveUARTConnection.png[]
 
 Connectors UART0 and UART1 are used for our examples and are wired as shown in Figure 3
 
-.I2C Connectors
-:page-toclevels: 3
+=== I2C Connectors
+
 image::GroveI2CConnection.png[]
 
 Connectors I2C0 and I2C1 are used for our examples and are wired as shown in Figure 4
