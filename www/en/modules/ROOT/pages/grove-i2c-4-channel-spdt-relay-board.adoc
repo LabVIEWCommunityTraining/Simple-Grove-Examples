@@ -35,7 +35,7 @@ You can now click on the switch symbols and the corresponding relay will toggle 
 
 image::I2C4ChanSPDTRelayBoardFP.png[]
 
-On the block diagram you can see that the selected Grove connector dictates the GPIO Pin and we then set the pin to [In]. Next we loop round and event structure and use the timeout to poll the digital inputs. Pressing Stop will fire the Stop event and exit the loop.
+On the block diagram you can see that the selected Grove connector dictates the GPIO Pin for the IC2 Port. We set up the IC2 port for the device in **Init.vi**. Next we loop round the event structure and wait for a button on the Front Panel to be pressed. When a switch is detected (event:Switch1,Switch2,Switch3 or Switch4) *Set Switch.vi* recieves the required settings. If the Load button is pressed the new board address is entered and the system re-initialise.  Pressing Stop will fire the Stop event and exit the loop.
 
 
 image::I2C4ChanSPDTRelayBoardBD.png[]
