@@ -6,9 +6,10 @@
 
 * Raspberry Pi Pico 2040 
 ** https://thepihut.com/products/raspberry-pi-pico[Pihut UK]
-** https://uk.farnell.com/raspberry-pi/raspberry-pi-pico/mcu-board-rpi-pico-264kb-133mhz/dp/3643332[Farnell UK]
+** https://uk.farnell.com/raspberry-pi/raspberry-pi-pico/mcu-board-rpi-pico-264kb-133mhz/dp/3643332[Farnell UK]#
+
 * Radxa X4 
-** https://thepihut.com/products/raspberry-pi-pico[Pihut UK]
+** https://radxa.com/products/x/x4/[Radxa]
 
 
 

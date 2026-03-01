@@ -11,7 +11,7 @@ The connectors used are [A0],[A1],[A2] as shown below
 
 image::GrovePicoShieldAnalogConnections.png[]
 
-* xref:grove-analog-inputs.adoc[Grove Analog Outputs]
+* xref:grove-analog-outputs-pwm.adoc[Grove Analog Outputs PWM]
 
 There are also options that communicate using I2C. These will use connectors I2C0 and I2C1 as shown. Commonly these will offer improved resolution e.g. 16 bits so 65536 levels. They may also offer amplifiers, multiplexers or other enhanced functionality. 
 
