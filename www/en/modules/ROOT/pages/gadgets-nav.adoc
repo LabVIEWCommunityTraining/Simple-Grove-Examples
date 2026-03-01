@@ -1,4 +1,4 @@
-= Grove Digital Inputs
+= Grove Gadgets
 :page-toclevels: 1
 
 == Overview

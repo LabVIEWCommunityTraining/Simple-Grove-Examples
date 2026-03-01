@@ -1,36 +1,31 @@
-= Grove Digital Inputs
+= Grove Analog Outputs PWM
 :page-toclevels: 1
 
-.Overview
-:page-toclevels: 2
-****
-This example uses the grove button module but the source code is also applicable for other similar Grove Modules.
+== Overview
 
-The GPIO Pins used are [D16,D17],[D18,D19],[D20,D21]
+This example uses the buzzer module but the source code is also applicable for other similar Grove Modules.
 
-image::general\GroveDigitalConnectionsPico.png[]
+The connectors used are [A0],[A1],[A2] as shown below
+
+image::GrovePicoShieldAnalogConnections.png[]
 
 
-****
 
-.Hardware Details
-:page-toclevels: 2
-****
+
+== Hardware Details
+
 https://wiki.seeedstudio.com/Grove-Dual-Button/#features[Grove Dual Button]
-****
 
-.Demo Video
-:page-toclevels: 2
-****
+
+== Demo Video
+
 Here is a video that shows the set-up and running of the Dual Button Digital Inputs
 
 video::0-suR8HejsY[youtube]
 
-****
 
-.Example Code
-:page-toclevels: 2
-****
+== Example Code
+
 Navigate to >>Scratchpad>>Grove>>Digital Inputs>>Grove Digital In.vi
 
 image::images\grove-digital-inputs\GroveDigitalInProject.png[]
@@ -46,4 +41,3 @@ image::images\grove-digital-inputs\GroveDigitalInFP.png[]
 On the block diagram you can see that the selected Grove connector dictates the GPIO Pin and we then set the pin to [In]. Next we loop round and event structure and use the timeout to poll the digital inputs. Pressing Stop will fire the Stop event and exit the loop.
 
 image::images\grove-digital-inputs\GroveDigitalInBD.png[]
-****
