@@ -3,10 +3,11 @@
 
 == Overview
 
-Grove has awide variety of displays that can be communicated to using I2C.
+Grove has a wide variety of displays that can be communicated to using I2C.
 
 image::GrovePicoShieldI2CConnection.png[]
-include::pages\grove-i2c-ssdc1315-64x128oled-display.adoc[]
 
 * xref:grove-i2c-hd44870-LCD-display.adoc[HD44870 LCD Display]
-* xref:grove-i2c-ssd1315-64x128oled-display.adoc[SSD1315 64x128 OLED Display]
+* xref:grove-i2c-sgm31323-rgb-controller-LCD-display.adoc[RGB Backlight Controller for LCD Display]
+* xref:grove-i2c-ssd1306-64x48oled-display.adoc[SSD1315 64x48 OLED Display]
+* xref:grove-i2c-8x8-RGB-Matrix-LED-display.adoc[8x8 RGB Matrix LED]

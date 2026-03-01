@@ -3,7 +3,7 @@
 
 == Overview
 
-A analog input can be thought of as a measurement or sensor reading. These will natively have a resolution of 12 bits, which can be thought of as a sensitivity across the range of the input. 12 bits= 4096 levels across the range.
+An analog input can be thought of as a measurement or sensor reading. These will natively have a resolution of 12 bits, which can be thought of as a sensitivity across the range of the input. 12 bits= 4096 levels across the range.
 
 The Connections used are [A0,NC],[A1,A2],[A2,A1] and these correspond to GPIO Pins A0=GPIO26, A1=GPIO27, A1=GPIO28
 
