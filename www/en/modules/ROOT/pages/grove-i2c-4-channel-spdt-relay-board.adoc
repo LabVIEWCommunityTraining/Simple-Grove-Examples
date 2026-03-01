@@ -1,49 +1,41 @@
-= Grove Digital Inputs
+= Grove I2C 4 Channel SPDT Relay Board
 :page-toclevels: 1
 
-.Overview
-:page-toclevels: 2
-****
-This example uses the grove button module but the source code is also applicable for other similar Grove Modules.
+== Overview
 
-The GPIO Pins used are [D16,D17],[D18,D19],[D20,D21]
+This example uses the grove 4 Channel Relay module, there are other similar modules that may work with this code.
 
-image::general\GroveDigitalConnectionsPico.png[]
+The GPIO Pins used are [I2C0] or [I2C1]
+
+image::GrovePicoShieldI2CConnection.png[]
 
 
-****
+== Hardware Details
 
-.Hardware Details
-:page-toclevels: 2
-****
-https://wiki.seeedstudio.com/Grove-Dual-Button/#features[Grove Dual Button]
-****
+https://wiki.seeedstudio.com/Grove-4-Channel_SPDT_Relay/[Grove I2C 4 Channel SPDT Relay Board]
 
-.Demo Video
-:page-toclevels: 2
-****
-Here is a video that shows the set-up and running of the Dual Button Digital Inputs
+
+== Demo Video
+
+Here is a video that shows the set-up and running of the 4 Channel Relay Board
 
 video::0-suR8HejsY[youtube]
 
-****
 
-.Example Code
-:page-toclevels: 2
-****
-Navigate to >>Scratchpad>>Grove>>Digital Inputs>>Grove Digital In.vi
+== Example Code
 
-image::images\grove-digital-inputs\GroveDigitalInProject.png[]
+Navigate to >>Scratchpad>>Grove>>Switches>>I2C 4 Channel SPDT Relay Board.vi
 
-This particular VI uses the dual buttons. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+image::Grove4ChannelSPDTRelayProject.png[]
 
-You should now see the button indicators light up when the corresponding button is pressed. The Indicators use a transparent fill for the off state and a brighter Red or Green for the on state.
+This particular VI uses the 4 Channel Relay Board. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
 
-Links to various other similar boards are also on the Front Panel.
+You can now click on the switch symbols and the corresponding relay will toggle matching the symbol. If you want to change the I2C address for multiple boards, you can modify [New Address] and press the load button. It's probably a good idea to mark the board with the new address, although it's fairly easy to ping the addresses of attached modules.
 
-image::images\grove-digital-inputs\GroveDigitalInFP.png[]
+
+image::I2C4ChanSPDTRelayBoardFP.png[]
 
 On the block diagram you can see that the selected Grove connector dictates the GPIO Pin and we then set the pin to [In]. Next we loop round and event structure and use the timeout to poll the digital inputs. Pressing Stop will fire the Stop event and exit the loop.
 
-image::images\grove-digital-inputs\GroveDigitalInBD.png[]
-****
+
+image::I2C4ChanSPDTRelayBoardBD.png[]

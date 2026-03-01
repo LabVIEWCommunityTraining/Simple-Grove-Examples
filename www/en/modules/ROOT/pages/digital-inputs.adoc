@@ -13,10 +13,6 @@ image::GroveDigitalConnectionsPico.png[]
 
 This example uses the grove button module but the source code is also applicable for other similar Grove Modules.
 
-The GPIO Pins used are [D16,D17],[D18,D19],[D20,D21]
-
-image::GroveDigitalConnectionsPico.png[]
-
 
 === Hardware Details
 

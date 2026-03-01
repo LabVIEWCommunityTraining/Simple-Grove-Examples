@@ -1,14 +1,15 @@
-= Grove Digital Inputs
+= Grove Digital Outputs
 :page-toclevels: 1
 
-.Overview
-:page-toclevels: 2
+== Overview
+
 A digital output can be thought of as the signal to an LED or a relay. These examples use the GPIO Pins [D16,D17],[D18,D19],[D20,D21] that correspond to connectors D16,D18 and D20 on the grove hat.
 
 image::GroveDigitalConnectionsPico.png[]
 
 * xref:grove-digital-outputs.adoc[Grove Digital Outputs]
 
+There are also options that communicate using I2C. These will use connectors I2C0 and I2C1 as shown.
 
 image::GrovePicoShieldI2CConnection.png[]
 * xref:grove-i2c-4-channel-spdt-relay-board.adoc[Grove I2C 4 Channel Relay Board]
