@@ -19,25 +19,24 @@ https://wiki.seeedstudio.com/Grove-Rotary_Angle_Sensor[Rotary Angle Sensor]
 
 == Demo Video
 
-Here is a video that shows the set-up and running of the Dual Button Digital Inputs
+Here is a video that shows the set-up and running of the Rotary Angle Sensor
 
 video::0-suR8HejsY[youtube]
 
 == Example Code
 
-Navigate to >>Scratchpad>>Grove>>Analog Inputs>>Grove Digital In.vi
+Navigate to >>Scratchpad>>Grove>>Analog Inputs>>Grove Read ADC.vi
 
 image::GroveReadADCProject.png[]
 
 This particular VI uses a rotary angle sensor (potentiometer). Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
 
-You should now see the button indicators light up when the corresponding button is pressed. The Indicators use a transparent fill for the off state and a brighter Red or Green for the on state.
+You should be able to see the graph change corresponding to how much you change the rotary sensor.
 
 Links to various other similar boards are also on the Front Panel.
 
-image::images\grove-digital-inputs\GroveDigitalInFP.png[]
+image::GroveReadADCFP.png[]
 
-On the block diagram you can see that the selected Grove connector dictates the GPIO Pin and we then set the pin to [In]. Next we loop round and event structure and use the timeout to poll the digital inputs. Pressing Stop will fire the Stop event and exit the loop.
+On the block diagram you can see that the selected Grove connector is input into *Configure AI.vi*. Next we loop round the event structure and use the timeout to poll the selected analog input using **AI Read Value.vi**. Pressing Stop will fire the Stop event and exit the loop.
 
-image::images\grove-digital-inputs\GroveDigitalInBD.png[]
-****
+image::GroveReadADCBD.png[]
