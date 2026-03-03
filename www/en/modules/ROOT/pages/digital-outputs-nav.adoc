@@ -1,6 +1,8 @@
 = Grove Digital Outputs
-:page-toclevels: 1
+:page-toclevels: 2
+
 == Standard Digital Output
+
 === Overview
 
 A digital output can be thought of as the signal to an LED or a relay. These examples use the GPIO Pins [D16,D17],[D18,D19],[D20,D21] that correspond to connectors D16,D18 and D20 on the grove shield.

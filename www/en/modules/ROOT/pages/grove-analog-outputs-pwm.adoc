@@ -10,8 +10,6 @@ The connectors used are [A0],[A1],[A2] as shown below
 image::GrovePicoShieldAnalogConnections.png[]
 
 
-
-
 == Hardware Details
 
 https://wiki.seeedstudio.com/Grove-Passive-Buzzer/[Grove Passive Buzzer]
@@ -21,8 +19,7 @@ https://wiki.seeedstudio.com/Grove-Passive-Buzzer/[Grove Passive Buzzer]
 
 Here is a video that shows the set-up and running of the Passive buzzer using a piano scale to demonstrate Frequency and Duty Cycle
 
-video::0-suR8HejsY[youtube]
-
+video::QSPMtF8XWTE[youtube]
 
 == Example Code
 
