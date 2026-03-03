@@ -11,7 +11,42 @@ The connectors used are [A0],[A1],[A2] as shown below
 
 image::GrovePicoShieldAnalogConnections.png[]
 
-* xref:grove-analog-outputs-pwm.adoc[Grove Analog Outputs PWM]
+This example uses the buzzer module but the source code is also applicable for other similar Grove Modules.
+
+The connectors used are [A0],[A1],[A2] as shown below
+
+image::GrovePicoShieldAnalogConnections.png[]
+
+== Hardware Details
+
+https://wiki.seeedstudio.com/Grove-Passive-Buzzer/[Grove Passive Buzzer]
+
+
+== Demo Video
+
+Here is a video that shows the set-up and running of the Passive buzzer using a piano scale to demonstrate Frequency and Duty Cycle
+
+video::0-suR8HejsY[youtube]
+
+
+== Example Code
+
+Navigate to >>Scratchpad>>Grove>>Analog Output PWM>>**Piano PWM AO.vi**
+
+image::images\GroveAnalogOutputPWMProject.png[]
+
+This particular VI uses the passive buzzer to make the sound. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+
+Links to various other similar boards are also on the Front Panel.
+
+image::images\GroveAnalogOutPWMFP.png[]
+
+On the block diagram you can see that the selected Grove connector dictates the GPIO Pin and we then wire it to the *Configure PWM.vi* . Next we loop round the event structure waiting for button press events. If a piano key is pressed the corresponding frequency will be entered into the *PWM Write Frequency.vi*. If the duty cycle is high enough a sound of the right key should be heard. Pressing Stop will fire the Stop event and exit the loop.
+
+image::images\GroveAnalogOutPWMBD.png[]
+
+
+
 
 There are also options that communicate using I2C. These will use connectors I2C0 and I2C1 as shown. Commonly these will offer improved resolution e.g. 16 bits so 65536 levels. They may also offer amplifiers, multiplexers or other enhanced functionality. 
 
