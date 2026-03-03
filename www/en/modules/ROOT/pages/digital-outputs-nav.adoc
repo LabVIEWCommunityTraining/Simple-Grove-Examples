@@ -3,13 +3,83 @@
 
 == Overview
 
-A digital output can be thought of as the signal to an LED or a relay. These examples use the GPIO Pins [D16,D17],[D18,D19],[D20,D21] that correspond to connectors D16,D18 and D20 on the grove hat.
+A digital output can be thought of as the signal to an LED or a relay. These examples use the GPIO Pins [D16,D17],[D18,D19],[D20,D21] that correspond to connectors D16,D18 and D20 on the grove shield.
 
 image::GroveDigitalConnectionsPico.png[]
 
 * xref:grove-digital-outputs.adoc[Grove Digital Outputs]
 
+== Hardware Details
+
+https://wiki.seeedstudio.com/Grove-Red_LED/[Grove LED]
+
+https://wiki.seeedstudio.com/Grove-Relay/[Grove Relay]
+
+
+== Demo Video
+
+Here is a video that shows the set-up and running of the LED and Relay Examples
+
+video::5MPWDghnn5Q[youtube]
+
+== Example Code
+
+Navigate to >>Scratchpad>>Grove>>Digital Inputs>>Grove Digital Out.vi
+
+image::GroveDigitalOutLEDProject.png[]
+
+This particular VI uses the Green LED. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+
+When you press the [Control Button] the LED should toggle on and off.
+
+Links to various other similar boards are also on the Front Panel.
+
+image::GroveDigitalOutLEDFP.png[]
+
+On the block diagram you can see that the selected Grove connector dictates the GPIO Pin and we then set the pin to [Out]. Next we loop round and event structure and use the Control Value Change Event to set the LED. Pressing Stop will fire the Stop event and exit the loop.
+The video shows the same VI being used to switch a relay on and off.
+
+image::GroveDigitalOutLEDBD.png[]
+
+= I2C Digital Output Boards
+
 There are also options that communicate using I2C. These will use connectors I2C0 and I2C1 as shown.
 
 image::GrovePicoShieldI2CConnection.png[]
 * xref:grove-i2c-4-channel-spdt-relay-board.adoc[Grove I2C 4 Channel Relay Board]
+
+This example uses the grove 4 Channel Relay module, there are other similar modules that may work with this code.
+
+The GPIO Pins used are [I2C0] or [I2C1]
+
+image::GrovePicoShieldI2CConnection.png[]
+
+
+== Hardware Details
+
+https://wiki.seeedstudio.com/Grove-4-Channel_SPDT_Relay/[Grove I2C 4 Channel SPDT Relay Board]
+
+
+== Demo Video
+
+Here is a video that shows the set-up and running of the 4 Channel Relay Board
+
+video::0Jp3GYXE-z4[youtube]
+
+== Example Code
+
+Navigate to >>Scratchpad>>Grove>>Switches>>I2C 4 Channel SPDT Relay Board.vi
+
+image::Grove4ChannelSPDTRelayProject.png[]
+
+This particular VI uses the 4 Channel Relay Board. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+
+You can now click on the switch symbols and the corresponding relay will toggle matching the symbol. If you want to change the I2C address for multiple boards, you can modify [New Address] and press the load button. It's probably a good idea to mark the board with the new address, although it's fairly easy to ping the addresses of attached modules.
+
+
+image::I2C4ChanSPDTRelayBoardFP.png[]
+
+On the block diagram you can see that the selected Grove connector dictates the GPIO Pin for the IC2 Port. We set up the IC2 port for the device in **Init.vi**. Next we loop round the event structure and wait for a button on the Front Panel to be pressed. When a switch is detected (event:Switch1,Switch2,Switch3 or Switch4) *Set Switch.vi* recieves the required settings. If the Load button is pressed the new board address is entered and the system re-initialise.  Pressing Stop will fire the Stop event and exit the loop.
+
+
+image::I2C4ChanSPDTRelayBoardBD.png[]
