@@ -51,10 +51,6 @@ image::GrovePicoShieldI2CConnection.png[]
 
 This example uses the grove 4 Channel Relay module, there are other similar modules that may work with this code.
 
-The GPIO Pins used are [I2C0] or [I2C1]
-
-image::GrovePicoShieldI2CConnection.png[]
-
 
 === Hardware Details
 
