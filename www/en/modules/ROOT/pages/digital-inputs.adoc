@@ -1,13 +1,11 @@
 = Grove Digital Inputs
 :page-toclevels: 2
 
-== Overview
+== Standard Digital Input
 
 A digital input can be thought of as the reading from a button, a switch or a digital sensor. These examples use the GPIO Pins [D16,D17],[D18,D19],[D20,D21] that correspond to connectors D16,D18 and D20 on the grove hat.
 
 image::GroveDigitalConnectionsPico.png[]
-
-== Example
 
 === Overview
 

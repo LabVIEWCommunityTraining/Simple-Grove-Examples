@@ -43,6 +43,8 @@ image::GroveDigitalOutLEDBD.png[]
 
 == I2C 4 Channel SPDT Relay Board
 
+=== Overview
+
 There are also options that communicate using I2C. These will use connectors I2C0 and I2C1 as shown.
 
 image::GrovePicoShieldI2CConnection.png[]
