@@ -1,17 +1,194 @@
 = Grove Gadgets
-:page-toclevels: 1
+:page-toclevels: 2
 
-== Overview
 Grove has a wide variety of fun toys that can be communicated to using I2C.
 
 image::GrovePicoShieldI2CConnection.png[]
 
-* xref:grove-i2c-gesture-sensor-I2C-PAJ7620U2.adoc[Gesture Sensor]
-* xref:grove-i2c-lsm6ds3-6-axis-gyro-accel.adoc[6 Axis Gyro Accellerometer]
-* xref:grove-i2c-8x8thermal-camera.adoc[8x8 Thermal Camera]
+== Grove Gesture Sensor
 
-TBD motor driver
+=== Hardware Details
 
-TBD encoder
+https://wiki.seeedstudio.com/Grove-4-Channel_SPDT_Relay/[Grove I2C 4 Channel SPDT Relay Board]
 
-TBD NFC Reader/Writer
+=== Demo Video
+
+Here is a video that shows the set-up and running of the LCD Display with RGB Backlight.
+
+video::_c_6OBtgLvg[youtube]
+
+=== Example Code
+
+Navigate to >>Scratchpad>>Grove>>Digital Inputs>>Grove Digital Out.vi
+
+image::GroveDigitalOutLEDProject.png[]
+
+This particular VI uses the Green LED. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+
+When you press the [Control Button] the LED should toggle on and off.
+
+Links to various other similar boards are also on the Front Panel.
+
+image::GroveDigitalOutLEDFP.png[]
+
+On the block diagram you can see that the selected Grove connector dictates the GPIO Pin and we then set the pin to [Out]. Next we loop round and event structure and use the Control Value Change Event to set the LED. Pressing Stop will fire the Stop event and exit the loop.
+The video also shows the same VI being used to switch a relay on and off.
+
+image::GroveDigitalOutLEDBD.png[]
+
+== Grove 6 Axis Gyro Accellerometer
+=== Hardware Details
+
+https://wiki.seeedstudio.com/Grove-4-Channel_SPDT_Relay/[Grove I2C 4 Channel SPDT Relay Board]
+
+=== Demo Video
+
+Here is a video that shows the set-up and running of the LCD Display with RGB Backlight.
+
+video::_c_6OBtgLvg[youtube]
+
+=== Example Code
+
+Navigate to >>Scratchpad>>Grove>>Digital Inputs>>Grove Digital Out.vi
+
+image::GroveDigitalOutLEDProject.png[]
+
+This particular VI uses the Green LED. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+
+When you press the [Control Button] the LED should toggle on and off.
+
+Links to various other similar boards are also on the Front Panel.
+
+image::GroveDigitalOutLEDFP.png[]
+
+On the block diagram you can see that the selected Grove connector dictates the GPIO Pin and we then set the pin to [Out]. Next we loop round and event structure and use the Control Value Change Event to set the LED. Pressing Stop will fire the Stop event and exit the loop.
+The video also shows the same VI being used to switch a relay on and off.
+
+image::GroveDigitalOutLEDBD.png[]
+
+
+== 8x8 Thermal Camera
+=== Hardware Details
+
+https://wiki.seeedstudio.com/Grove-4-Channel_SPDT_Relay/[Grove I2C 4 Channel SPDT Relay Board]
+
+=== Demo Video
+
+Here is a video that shows the set-up and running of the LCD Display with RGB Backlight.
+
+video::_c_6OBtgLvg[youtube]
+
+=== Example Code
+
+Navigate to >>Scratchpad>>Grove>>Digital Inputs>>Grove Digital Out.vi
+
+image::GroveDigitalOutLEDProject.png[]
+
+This particular VI uses the Green LED. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+
+When you press the [Control Button] the LED should toggle on and off.
+
+Links to various other similar boards are also on the Front Panel.
+
+image::GroveDigitalOutLEDFP.png[]
+
+On the block diagram you can see that the selected Grove connector dictates the GPIO Pin and we then set the pin to [Out]. Next we loop round and event structure and use the Control Value Change Event to set the LED. Pressing Stop will fire the Stop event and exit the loop.
+The video also shows the same VI being used to switch a relay on and off.
+
+image::GroveDigitalOutLEDBD.png[]
+
+
+== L298 Motor Driver
+=== Hardware Details
+
+https://wiki.seeedstudio.com/Grove-4-Channel_SPDT_Relay/[Grove I2C 4 Channel SPDT Relay Board]
+
+=== Demo Video
+
+Here is a video that shows the set-up and running of the LCD Display with RGB Backlight.
+
+video::_c_6OBtgLvg[youtube]
+
+=== Example Code
+
+Navigate to >>Scratchpad>>Grove>>Digital Inputs>>Grove Digital Out.vi
+
+image::GroveDigitalOutLEDProject.png[]
+
+This particular VI uses the Green LED. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+
+When you press the [Control Button] the LED should toggle on and off.
+
+Links to various other similar boards are also on the Front Panel.
+
+image::GroveDigitalOutLEDFP.png[]
+
+On the block diagram you can see that the selected Grove connector dictates the GPIO Pin and we then set the pin to [Out]. Next we loop round and event structure and use the Control Value Change Event to set the LED. Pressing Stop will fire the Stop event and exit the loop.
+The video also shows the same VI being used to switch a relay on and off.
+
+image::GroveDigitalOutLEDBD.png[]
+
+
+== Encoder
+=== Hardware Details
+
+https://wiki.seeedstudio.com/Grove-4-Channel_SPDT_Relay/[Grove I2C 4 Channel SPDT Relay Board]
+
+=== Demo Video
+
+Here is a video that shows the set-up and running of the LCD Display with RGB Backlight.
+
+video::_c_6OBtgLvg[youtube]
+
+=== Example Code
+
+Navigate to >>Scratchpad>>Grove>>Digital Inputs>>Grove Digital Out.vi
+
+image::GroveDigitalOutLEDProject.png[]
+
+This particular VI uses the Green LED. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+
+When you press the [Control Button] the LED should toggle on and off.
+
+Links to various other similar boards are also on the Front Panel.
+
+image::GroveDigitalOutLEDFP.png[]
+
+On the block diagram you can see that the selected Grove connector dictates the GPIO Pin and we then set the pin to [Out]. Next we loop round and event structure and use the Control Value Change Event to set the LED. Pressing Stop will fire the Stop event and exit the loop.
+The video also shows the same VI being used to switch a relay on and off.
+
+image::GroveDigitalOutLEDBD.png[]
+
+
+== NFC Reader/Writer
+=== Hardware Details
+
+https://wiki.seeedstudio.com/Grove-4-Channel_SPDT_Relay/[Grove I2C 4 Channel SPDT Relay Board]
+
+=== Demo Video
+
+Here is a video that shows the set-up and running of the LCD Display with RGB Backlight.
+
+video::_c_6OBtgLvg[youtube]
+
+=== Example Code
+
+Navigate to >>Scratchpad>>Grove>>Digital Inputs>>Grove Digital Out.vi
+
+image::GroveDigitalOutLEDProject.png[]
+
+This particular VI uses the Green LED. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+
+When you press the [Control Button] the LED should toggle on and off.
+
+Links to various other similar boards are also on the Front Panel.
+
+image::GroveDigitalOutLEDFP.png[]
+
+On the block diagram you can see that the selected Grove connector dictates the GPIO Pin and we then set the pin to [Out]. Next we loop round and event structure and use the Control Value Change Event to set the LED. Pressing Stop will fire the Stop event and exit the loop.
+The video also shows the same VI being used to switch a relay on and off.
+
+image::GroveDigitalOutLEDBD.png[]
+
+
+
