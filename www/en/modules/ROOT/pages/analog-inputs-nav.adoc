@@ -1,7 +1,9 @@
 = Grove Analog Inputs
 :page-toclevels: 1
 
-== Overview
+== Grove Standard Analog Inputs
+
+=== Overview
 
 An analog input can be thought of as a measurement or sensor reading. These will natively have a resolution of 12 bits, which can be thought of as a sensitivity across the range of the input. 12 bits= 4096 levels across the range.
 
@@ -11,12 +13,79 @@ The connectors used are [A0],[A1],[A2] as shown below
 
 image::GrovePicoShieldAnalogConnections.png[]
 
-* xref:grove-analog-inputs.adoc[Grove Analog Inputs]
+=== Hardware Details
+
+https://wiki.seeedstudio.com/Grove-Rotary_Angle_Sensor[Rotary Angle Sensor]
+
+
+=== Demo Video
+
+Here is a video that shows the set-up and running of the Rotary Angle Sensor
+
+video::0-suR8HejsY[youtube]
+
+=== Example Code
+
+Navigate to >>Scratchpad>>Grove>>Analog Inputs>>Grove Read ADC.vi
+
+image::GroveReadADCProject.png[]
+
+This particular VI uses a rotary angle sensor (potentiometer). Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+
+You should be able to see the graph change corresponding to how much you change the rotary sensor.
+
+Links to various other similar boards are also on the Front Panel.
+
+image::GroveReadADCFP.png[]
+
+On the block diagram you can see that the selected Grove connector is input into *Configure AI.vi*. Next we loop round the event structure and use the timeout to poll the selected analog input using **AI Read Value.vi**. Pressing Stop will fire the Stop event and exit the loop.
+
+image::GroveReadADCBD.png[]
+
+== Grove I2C Analog Inputs
 
 There are also options that communicate using I2C. These will use connectors I2C0 and I2C1 as shown. Commonly these will offer improved resolution e.g. 16 bits or 24 bits, so 65536 levels or 16,777,215 level respectively. They may also offer amplifiers, multiplexers or other enhanced functionality. 
 
 image::GrovePicoShieldI2CConnection.png[]
 
-* xref:grove-i2c-ADC-ADS1115.adoc[Grove I2C 4 Channel 16 Bit Analog Input]
-* xref:grove-i2c-dh20-temperature-humidity-sensor.adoc[Grove I2C Temperature Humdity Sensor]
+== Grove I2C 4 Channel 16 Bit Analog Input
+
+=== Overview
+This module provides 4 channels with 16 bit resolution and programmable gain.
+
+=== Hardware Details
+
+https://wiki.seeedstudio.com/Grove-16-bit-ADC-ADS1115/[Grove I2C 4 Channel 16 Bit Analog Input]
+
+=== Demo Video
+
+Here is a video that shows the set-up and running of the Grove I2C 4 Channel 16 Bit Analog Input module
+
+video::0-suR8HejsY[youtube]
+
+=== Example Code
+
+Navigate to >>Scratchpad>>Grove>>Sensors>>**I2C 4 Channel An In ADS1115.vi**
+
+image::GroveADS11154ChanADCProject.png[]
+
+In this example we will need to have a voltage source to show a change in signal. Here I've just wired a potentiometer to the 5V and Ground on the board.
+
+This VI uses ADS1115 4 Channels Analog Input Module. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+
+image::GroveADS11154ChanADCFP.png[]
+
+On the block diagram you can see that the selected Grove connector is input into *Configure AI.vi*. Next we loop round the event structure and use the timeout to poll the selected analog input using **AI Read Value.vi**. Pressing Stop will fire the Stop event and exit the loop.
+
+image::GroveADS11154ChanADCBD.png[]
+
+
+
+
+== Grove I2C Temperature Humidity Sensor
+
+* xref:grove-i2c-dh20-temperature-humidity-sensor.adoc[Grove I2C Temperature Humidity Sensor]
+
+== Grove I2C Thermocouple Sensor
+
 * xref:grove-i2c-mcp9600-thermocouple-sensor.adoc[Grove I2C Thermocouple Sensor]

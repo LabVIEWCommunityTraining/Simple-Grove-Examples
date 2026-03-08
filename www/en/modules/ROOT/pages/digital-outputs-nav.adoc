@@ -37,7 +37,7 @@ Links to various other similar boards are also on the Front Panel.
 image::GroveDigitalOutLEDFP.png[]
 
 On the block diagram you can see that the selected Grove connector dictates the GPIO Pin and we then set the pin to [Out]. Next we loop round and event structure and use the Control Value Change Event to set the LED. Pressing Stop will fire the Stop event and exit the loop.
-The video shows the same VI being used to switch a relay on and off.
+The video also shows the same VI being used to switch a relay on and off.
 
 image::GroveDigitalOutLEDBD.png[]
 

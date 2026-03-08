@@ -1,13 +1,75 @@
 = Grove Displays
 :page-toclevels: 1
 
-== Overview
-
 Grove has a wide variety of displays that can be communicated to using I2C.
 
 image::GrovePicoShieldI2CConnection.png[]
 
-* xref:grove-i2c-hd44870-LCD-display.adoc[HD44870 LCD Display]
-* xref:grove-i2c-sgm31323-rgb-controller-LCD-display.adoc[RGB Backlight Controller for LCD Display]
-* xref:grove-i2c-ssd1306-64x48oled-display.adoc[SSD1315 64x48 OLED Display]
-* xref:grove-i2c-8x8-RGB-Matrix-LED-display.adoc[8x8 RGB Matrix LED]
+== HD44870 LCD Display with RGB Backlight Controller
+
+=== Overview
+
+The LCD display is a useful, robust low power way show system information. The RGB backlight also can convey extra information like Warnings and Alerts.
+
+=== Hardware Details
+
+https://wiki.seeedstudio.com/Grove-4-Channel_SPDT_Relay/[Grove I2C 4 Channel SPDT Relay Board]
+
+=== Demo Video
+
+Here is a video that shows the set-up and running of the LCD Display with RGB Backlight.
+
+video::_c_6OBtgLvg[youtube]
+
+== SSD1315 64x128 OLED Display
+
+=== Overview
+
+This example shows how to use a 2D picture control to display on a 64x128 monochrome OLED display
+
+=== Hardware Details
+
+https://wiki.seeedstudio.com/Grove-OLED-Display-0.96-SSD1315/#feature[Grove - OLED Display 0.96" (SSD1315)]
+
+=== Demo Video
+
+Here is a video that demonstrates how to use the 64x128 OLED display
+
+video::U05stmxbPzs[youtube]
+
+=== Example Code
+
+== SSD1306 64x48 OLED Display
+
+=== Overview
+
+This example shows how to use a 2D picture control to display on a tiny monochrome OLED display
+
+=== Hardware Details
+
+https://wiki.seeedstudio.com/Grove-OLED-Display-0.66-SSD1306_v1.0/#feature[Grove - OLED Display 0.66" (SSD1306)]
+
+=== Demo Video
+
+
+
+video::w0F2TlSiCmE[youtube]
+
+=== Example Code
+
+== 8x8 RGB Matrix LED
+
+=== Overview
+
+=== Hardware Details
+
+https://wiki.seeedstudio.com/Grove-RGB_LED_Matrix_w-Driver/[Grove - RGB LED Matrix w/Driver]
+
+=== Demo Video
+
+Here is a video that demonstrates the capabilities of the 8x8 RGB Matrix LED Board
+
+video::OjOcmV7EbRs[youtube]
+
+=== Example Code
+

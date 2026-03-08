@@ -1,10 +1,10 @@
 * xref:index.adoc[Overview]
 * xref:set-up.adoc[Set-up Instructions]
 * xref:what-is-grove.adoc[What is Grove]
-* xref:analog-inputs-nav.adoc[Analog Input Examples]
-* xref:analog-outputs-nav.adoc[Analog Output Examples]
-* xref:digital-inputs.adoc[Digital Input Examples]
 * xref:digital-outputs-nav.adoc[Digital Output Examples]
+* xref:digital-inputs.adoc[Digital Input Examples]
+* xref:analog-outputs-nav.adoc[Analog Output Examples]
+* xref:analog-inputs-nav.adoc[Analog Input Examples]
 * xref:displays-nav.adoc[Various Displays]
 * xref:gadgets-nav.adoc[Misc Gadgets Examples]
 
