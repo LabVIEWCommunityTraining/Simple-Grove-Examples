@@ -1,5 +1,5 @@
 = Grove Analog Inputs
-:page-toclevels: 1
+:page-toclevels: 2
 
 == Grove Standard Analog Inputs
 

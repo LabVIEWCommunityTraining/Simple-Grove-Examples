@@ -27,16 +27,15 @@ Navigate to >>Scratchpad>>Grove>>Digital Inputs>>Grove Digital Out.vi
 
 image::GroveRGBI2CLCDProject.png[]
 
-This particular VI uses the Green LED. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+This VI uses sends text to the LCD display and also changes the backlight color. It communicates to 2 different I2C addresses to achieve this.
 
-When you press the [Control Button] the LED should toggle on and off.
+Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
 
-Links to various other similar boards are also on the Front Panel.
+I've only implemented and tested the basic functionality for this board, so Write Text works, Clear and Home works and SetBacklight.
 
 image::GroveRGBI2CLCDFP.png[]
 
-On the block diagram you can see that the selected Grove connector dictates the GPIO Pin and we then set the pin to [Out]. Next we loop round and event structure and use the Control Value Change Event to set the LED. Pressing Stop will fire the Stop event and exit the loop.
-The video also shows the same VI being used to switch a relay on and off.
+dictates the GPIO Pin for the IC2 Port. We set up the IC2 port for the device in **Grove I2C LCD.lvclass:Init.vi** and **Grove I2C RGB SGM31323.lvclass:Init.vi**. Next we loop round the event structure and wait for a button on the Front Panel to be pressed. When a button is detected (event:button>>Value Change will fire) the associated VI will run. Explore the different events to see how they operate. Pressing Stop will fire the Stop event and exit the loop.
 
 image::GroveRGBI2CLCDBD.png[]
 
@@ -63,16 +62,17 @@ Navigate to >>Scratchpad>>Grove>>Displays>>I2C Grove 64x128OLED_SSD1315_Graph.vi
 
 image::GroveOLED64x128-SSD1315-GraphProject.png[]
 
-This particular VI uses the Green LED. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+This particular VI builds a small graph image in a 2D picture control. This picture control is converted to a monochrome image and this image is converted into messages n I2C. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
 
-When you press the [Control Button] the LED should toggle on and off.
-
-Links to various other similar boards are also on the Front Panel.
+You should see the graph fillng up with random numbers.
 
 image::GroveOLED64x128-SSD1315-GraphFP.png[]
 
-On the block diagram you can see that the selected Grove connector dictates the GPIO Pin and we then set the pin to [Out]. Next we loop round and event structure and use the Control Value Change Event to set the LED. Pressing Stop will fire the Stop event and exit the loop.
-The video also shows the same VI being used to switch a relay on and off.
+On the block diagram you can see that the selected Grove connector dictates the GPIO Pin used by the I2C port.
+
+We set up the IC2 port for the device in **64x128 I2C OLED SSD1315.lvclass:Init.vi**, this VI also outputs a picture of the correct dimensions as a template. The While Loop will now iterate every 200msecs adding a random number to the 100 element rolling buffer. This buffer is input to Plot XY.vi that creates the picture to fit our template. This picture is input into **64x128 I2C OLED SSD1315.lvclass:Write Image.vi** that converts and transmits all the I2C messages.
+
+Pressing Stop will exit the loop.
 
 image::GroveOLED64x128-SSD1315-GraphBD.png[]
 
@@ -97,16 +97,15 @@ Navigate to >>Scratchpad>>Grove>>Displays>>I2C Grove 64x48OLED_SSD1306_Graph.vi
 
 image::GroveOLED64x48-SSD1306-GraphProject.png[]
 
-This particular VI uses the Green LED. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
-
-When you press the [Control Button] the LED should toggle on and off.
-
-Links to various other similar boards are also on the Front Panel.
+This particular VI builds a small graph image in a 2D picture control. This picture control is converted to a monochrome image and this image is converted into messages n I2C. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
 
 image::GroveOLED64x48-SSD1306-GraphFP.png[]
 
-On the block diagram you can see that the selected Grove connector dictates the GPIO Pin and we then set the pin to [Out]. Next we loop round and event structure and use the Control Value Change Event to set the LED. Pressing Stop will fire the Stop event and exit the loop.
-The video also shows the same VI being used to switch a relay on and off.
+On the block diagram you can see that the selected Grove connector dictates the GPIO Pin used by the I2C port.
+
+We set up the IC2 port for the device in **64x48 I2C OLED SSD1306.lvclass:Init.vi**, this VI also outputs a picture of the correct dimensions as a template. The While Loop will now iterate every 200msecs adding a random number to the 100 element rolling buffer. This buffer is input to Plot XY.vi that creates the picture to fit our template. This picture is input into **64x48 I2C OLED SSD1306.lvclass:Write Image.vi** that converts and transmits all the I2C messages.
+
+Pressing Stop will exit the loop.
 
 image::GroveOLED64x48-SSD1306-GraphBD.png[]
 
@@ -131,16 +130,20 @@ Navigate to >>Scratchpad>>Grove>>Displays>>I2C Grove 8x8 Matrix LED Examples.vi
 
 image::Grove8x8RGBLEDExamplesProject.png[]
 
-This particular VI uses the Green LED. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
 
-When you press the [Control Button] the LED should toggle on and off.
+Various pre-programed examples are available by selecting the colour from the Colour enum and then pressing Set Number or Set String to display your chosen number or string.
 
-Links to various other similar boards are also on the Front Panel.
+Set Emoji or Set Animation will display your selected Emoji or Animation.
+
 
 image::Grove8x8RGBLEDExamplesFP.png[]
 
-On the block diagram you can see that the selected Grove connector dictates the GPIO Pin and we then set the pin to [Out]. Next we loop round and event structure and use the Control Value Change Event to set the LED. Pressing Stop will fire the Stop event and exit the loop.
-The video also shows the same VI being used to switch a relay on and off.
+We set up the IC2 port for the device in **Grove 2 RGB LED Matrix.lvclass:Init**
+
+On the block diagram you can see that the selected Grove connector dictates the GPIO Pin for the I2C Connector. Next we loop round an event structure and use the detect button value change events for Set Number, Set String, Set Emojo or Set Animation. The fired event will use the associated data as an input to the selected function. 
+
+Pressing Stop will fire the Stop event and exit the loop.
 
 image::Grove8x8RGBLEDExamplesBD.png[]
 

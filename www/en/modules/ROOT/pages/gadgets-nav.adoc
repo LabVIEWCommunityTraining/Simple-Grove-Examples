@@ -7,9 +7,11 @@ image::GrovePicoShieldI2CConnection.png[]
 
 == Grove Gesture Sensor
 
+The sensor on Grove - Gesture is PAJ7620U2 that integrates gesture recognition function with general I2C interface into a single chip. It can recognize 9 basic gestures, and these gestures information can be simply accessed via the I2C bus.
+
 === Hardware Details
 
-https://wiki.seeedstudio.com/Grove-4-Channel_SPDT_Relay/[Grove I2C 4 Channel SPDT Relay Board]
+https://wiki.seeedstudio.com/Grove-Gesture_v1.0/[Grove - Gesture Sensor V1.0]
 
 === Demo Video
 
@@ -37,15 +39,18 @@ The video also shows the same VI being used to switch a relay on and off.
 image::GroveDigitalOutLEDBD.png[]
 
 == Grove 6 Axis Gyro Accellerometer
+
+Grove - 6-Axis Accelerometer&Gyroscope is a cost-effective Grove interfaced and integrated sensor combination of 3-axis digital accelerometer and 3-axis digital gyroscope.
+
 === Hardware Details
 
-https://wiki.seeedstudio.com/Grove-4-Channel_SPDT_Relay/[Grove I2C 4 Channel SPDT Relay Board]
+https://wiki.seeedstudio.com/Grove-6-Axis_AccelerometerAndGyroscope/[Grove - 6-Axis Accelerometer & Gyroscope]
 
 === Demo Video
 
 Here is a video that shows the set-up and running of the LCD Display with RGB Backlight.
 
-video::_c_6OBtgLvg[youtube]
+video::Ou9bYsspwoc[youtube]
 
 === Example Code
 
@@ -68,15 +73,22 @@ image::GroveDigitalOutLEDBD.png[]
 
 
 == 8x8 Thermal Camera
+
+The Grove - Infrared Temperature Sensor Array (AMG8833) is a high precision infrared array sensor which based on advanced MEMS technology. It can support temperature detection of two-dimensional area: 8 × 8 (64 pixels) and maximum 7 meters detection distance.
+
 === Hardware Details
 
-https://wiki.seeedstudio.com/Grove-4-Channel_SPDT_Relay/[Grove I2C 4 Channel SPDT Relay Board]
+https://wiki.seeedstudio.com/Grove-Infrared_Temperature_Sensor_Array-AMG8833/[Grove - Infrared Temperature Sensor Array(AMG8833)]
 
 === Demo Video
 
 Here is a video that shows the set-up and running of the LCD Display with RGB Backlight.
 
-video::_c_6OBtgLvg[youtube]
+video::XtYEoU-dgPk[youtube]
+
+This video shows some of the development process
+
+video::XtYEoU-dgPk[youtube]
 
 === Example Code
 
@@ -99,9 +111,12 @@ image::GroveDigitalOutLEDBD.png[]
 
 
 == L298 Motor Driver
+
+The Grove - I2C Motor Driver V1.3 (latest version) can directly control Stepper Motor or DC Motor. Its heart is a dual channel H-bridge driver chip（L298N）that can handle current up to 2A per channel, controlled by an Atmel ATmega8L which handles the I2C communication with platforms such as Arduino. Both motors can be driven simultaneously while set to a different speed and direction. It can power two brushed DC motors or one 4-wire two-phase stepper motor. It requires a 6V to 15V power supply to power the motor and has an onboard 5V voltage regulator which can power the I2C bus and the Arduino(selectable by jumper). All driver lines are protected by diodes from back-EMF.
+
 === Hardware Details
 
-https://wiki.seeedstudio.com/Grove-4-Channel_SPDT_Relay/[Grove I2C 4 Channel SPDT Relay Board]
+https://wiki.seeedstudio.com/Grove-I2C_Motor_Driver_V1.3/#hardware-overview/[Grove - I2C Motor Driver V1.3]
 
 === Demo Video
 
@@ -161,6 +176,9 @@ image::GroveDigitalOutLEDBD.png[]
 
 
 == NFC Reader/Writer
+
+
+
 === Hardware Details
 
 https://wiki.seeedstudio.com/Grove-4-Channel_SPDT_Relay/[Grove I2C 4 Channel SPDT Relay Board]

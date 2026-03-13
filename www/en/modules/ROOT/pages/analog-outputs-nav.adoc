@@ -1,5 +1,5 @@
 = Grove Analog Outputs
-:page-toclevels: 1
+:page-toclevels: 2
 
 == Standard Analog Output PWM
 === Overview
