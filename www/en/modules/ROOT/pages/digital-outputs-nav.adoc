@@ -51,6 +51,10 @@ image::GrovePicoShieldI2CConnection.png[]
 
 This example uses the grove 4 Channel Relay module, there are other similar modules that may work with this code.
 
+The Single Pole Double Throw SPDT relay is quite useful in certain applications because it has one common terminal and 2 contacts which are great for selecting between two options. The Grove - 4-Channel SPDT Relay has four single pole - double throw (SPDT) switches. It only requires low-voltage and low current signals to control those switches. Specifically, you can use 5V DC to control max.250V AC or 110V DC. The I2C address is changeable so that you can use multiple relay modules in the same project. The Grove - 4-Channel SPDT Relay has four single pole - double throw (SPDT) switches. It only requires low-voltage and low current signals to control those switches. Specifically, you can use 5V DC to control max.250V AC or 110V DC.
+
+SEEED uses an on-board STM32F030F4P6 to control the channels separately. The command from Arduino or other boards is transmit via the I2C interface, the on-board STM32F030F4P6 will parse the command, so that you can control the switch you want.
+
 
 === Hardware Details
 

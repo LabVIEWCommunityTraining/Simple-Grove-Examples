@@ -23,7 +23,7 @@ video::_c_6OBtgLvg[youtube]
 
 === Example Code
 
-Navigate to >>Scratchpad>>Grove>>Digital Inputs>>Grove Digital Out.vi
+Navigate to >>Scratchpad>>Grove>>Displays>>Grove RGB I2C LCD Full.vi
 
 image::GroveRGBI2CLCDProject.png[]
 
@@ -62,7 +62,7 @@ Navigate to >>Scratchpad>>Grove>>Displays>>I2C Grove 64x128OLED_SSD1315_Graph.vi
 
 image::GroveOLED64x128-SSD1315-GraphProject.png[]
 
-This particular VI builds a small graph image in a 2D picture control. This picture control is converted to a monochrome image and this image is converted into messages n I2C. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+This particular VI builds a small graph image in a 2D picture control. This picture control is converted to a monochrome image and this image is converted into messages in I2C. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
 
 You should see the graph fillng up with random numbers.
 
@@ -112,6 +112,8 @@ image::GroveOLED64x48-SSD1306-GraphBD.png[]
 == 8x8 RGB Matrix LED
 
 === Overview
+
+8x8 RGB LED Matrix is great for simple image display, 64 pixel leds and 255 colors for each pixel means almost infinite possibilities. However, the complicated wiring of the matrix is daunting. Now we present the Grove - RGB LED Matrix w/Driver for you, leave all the complex and variable wireing and soldering behind, just one single grove connector to control the RGB 8x8 LED matrix easily.
 
 === Hardware Details
 
