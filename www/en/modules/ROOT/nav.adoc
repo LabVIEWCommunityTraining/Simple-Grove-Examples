@@ -5,6 +5,7 @@
 * xref:digital-inputs.adoc[Digital Input Examples]
 * xref:analog-outputs-nav.adoc[Analog Output Examples]
 * xref:analog-inputs-nav.adoc[Analog Input Examples]
+* xref:sensors.adoc[Various Sensors]
 * xref:displays-nav.adoc[Various Displays]
 * xref:gadgets-nav.adoc[Misc Gadgets Examples]
 

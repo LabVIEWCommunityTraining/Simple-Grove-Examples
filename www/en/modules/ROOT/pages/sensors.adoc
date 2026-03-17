@@ -1,0 +1,71 @@
+= Sensors
+:page-toclevels: 2
+
+== Grove I2C Sensors
+
+There are also options that communicate using I2C. These will use connectors I2C0 and I2C1 as shown. Commonly these will offer improved resolution e.g. 16 bits or 24 bits, so 65536 levels or 16,777,215 level respectively. They may also offer amplifiers, multiplexers or other enhanced functionality. 
+
+image::GrovePicoShieldI2CConnection.png[]
+
+== Grove I2C Temperature Humidity Sensor DH20
+
+=== Overview
+
+The new Grove - Temperature & Humidity Sensor is based on the DHT20 sensor. The DH20 is an upgraded version of the DHT11, compared with the previous version, the temperature and humidity measurement accuracy are higher, and the measurement range is larger. It features I2C output which means it is easier to use.
+
+=== Hardware Details
+
+https://wiki.seeedstudio.com/Grove-Temperature-Humidity-Sensor-DH20/[Grove I2C Temperature Humidity Sensor DH20]
+
+=== Demo Video
+
+Here is a video that shows the set-up and running of the Grove I2C Temperature Humidity Sensor
+
+video::ENfYFbsgunE[youtube]
+
+=== Example Code
+
+Navigate to >>Scratchpad>>Grove>>Sensors>>**I2C Temperature Humidity Sensor DH20.vi**
+
+image::GroveI2CTemperatureHumiditySensorDH20-Project.png[]
+
+This VI uses Grove I2C Temperature Humidity DH20 Sensor. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+
+image::GroveI2CTemperatureHumiditySensorDH20-FP.png[]
+
+
+On the block diagram you can see that the selected Grove connector is input into *Grove Temperature Humidity Sensor DH20.lvclass:Init.vi*. Next we loop round the event structure and use the timeout to poll the Sensors using *Grove Temperature Humidity Sensor DH20.lvclass:Read Temp Humidity.vi*. Pressing Stop will fire the Stop event and exit the loop.
+
+image::GroveI2CTemperatureHumiditySensorDH20-BD.png[]
+
+== Grove I2C Thermocouple Sensor
+
+=== Overview
+
+The Grove - I2C Thermocouple Amplifier (MCP9600) is a thermocouple-to-digital converter with integrated cold-junction and I2C communication protocol. This module is designed to be used in conjunction with a k-type thermocouple. The thermocouples have a much larger measurement range than thermistors.
+
+=== Hardware Details
+
+https://wiki.seeedstudio.com/Grove-I2C_Thermocouple_Amplifier-MCP9600/[Grove I2C Thermocouple Amplifier MCP9600]
+
+=== Demo Video
+
+Here is a video that shows the set-up and running of the Grove I2C Thermocouple Amplifier MCP9600
+
+video::BdaQqxTZXwk[youtube]
+
+=== Example Code
+
+Navigate to >>Scratchpad>>Grove>>Sensors>>**I2C Thermocouple MCP9600.vi**
+
+image::GroveI2CThermocoupleAmpMCP9600-Project.png[]
+
+This VI uses Grove I2C Thermocouple Amplifier MCP9600. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+
+image::GroveI2CThermocoupleAmpMCP9600-FP.png[]
+
+
+On the block diagram you can see that the selected Grove connector is input into *Grove Thermocouple MCP9600.lvclass:Init.vi*. We then can set the thermocouple type from the Thermocouple Type Value Change event and *Grove Thermocouple MCP9600.lvclass:Set Thermocouple Type.vi*.
+Next we loop round the event structure and use the timeout to poll the Sensors using *Grove Thermocouple MCP9600.lvclass:Read Temperature.vi*. Pressing Stop will fire the Stop event and exit the loop.
+
+image::GroveI2CThermocoupleAmpMCP9600-BD.png[]
