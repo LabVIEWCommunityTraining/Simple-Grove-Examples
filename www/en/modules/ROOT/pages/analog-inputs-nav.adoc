@@ -61,7 +61,8 @@ https://wiki.seeedstudio.com/Grove-16-bit-ADC-ADS1115/[Grove I2C 4 Channel 16 Bi
 
 Here is a video that shows the set-up and running of the Grove I2C 4 Channel 16 Bit Analog Input module
 
-video::0-suR8HejsY[youtube]
+video::_xpF_2K6F94[youtube]
+
 
 === Example Code
 
@@ -84,8 +85,38 @@ image::GroveADS11154ChanADCBD.png[]
 
 == Grove I2C Temperature Humidity Sensor
 
-* xref:grove-i2c-dh20-temperature-humidity-sensor.adoc[Grove I2C Temperature Humidity Sensor]
+
+=== Overview
+
+This module provides 4 channels with 16 bit resolution and programmable gain.
+
+=== Hardware Details
+
+https://wiki.seeedstudio.com/Grove-16-bit-ADC-ADS1115/[Grove I2C 4 Channel 16 Bit Analog Input]
+
+=== Demo Video
+
+Here is a video that shows the set-up and running of the Grove I2C 4 Channel 16 Bit Analog Input module
+
+video::ENfYFbsgunE[youtube]
+
+=== Example Code
+
 
 == Grove I2C Thermocouple Sensor
+
+=== Overview
+
+This module provides 4 channels with 16 bit resolution and programmable gain.
+
+=== Hardware Details
+
+https://wiki.seeedstudio.com/Grove-16-bit-ADC-ADS1115/[Grove I2C 4 Channel 16 Bit Analog Input]
+
+=== Demo Video
+
+Here is a video that shows the set-up and running of the Grove I2C 4 Channel 16 Bit Analog Input module
+
+video::ENfYFbsgunE[youtube]
 
 * xref:grove-i2c-mcp9600-thermocouple-sensor.adoc[Grove I2C Thermocouple Sensor]

@@ -86,7 +86,8 @@ https://wiki.seeedstudio.com/Grove-Infrared_Temperature_Sensor_Array-AMG8833/[Gr
 
 Here is a video that shows the set-up and running of the Thermal Camera
 
-video::XtYEoU-dgPk[youtube]
+video::7fWAwL9hBnc[youtube]
+
 
 This video shows some of the development process
 

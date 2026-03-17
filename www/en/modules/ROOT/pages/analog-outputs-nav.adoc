@@ -71,8 +71,7 @@ https://www.dfrobot.com/product-2756.html[DFRobot boards may also work]
 
 Here is a video that shows the set-up and running of the M5Stack DAC2
 
-video::0-suR8HejsY[youtube]
-
+video::KhWh9l7JJ1Y[youtube]
 
 === Example Code
 
