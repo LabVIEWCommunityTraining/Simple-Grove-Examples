@@ -1,6 +1,8 @@
 = Sensors
 :page-toclevels: 2
 
+Grove has a wide variety of sensors that can be communicated to using I2C.
+
 == Grove I2C Sensors
 
 There are also options that communicate using I2C. These will use connectors I2C0 and I2C1 as shown. Commonly these will offer improved resolution e.g. 16 bits or 24 bits, so 65536 levels or 16,777,215 level respectively. They may also offer amplifiers, multiplexers or other enhanced functionality. 
