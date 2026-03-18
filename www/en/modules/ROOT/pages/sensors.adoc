@@ -13,7 +13,7 @@ image::GrovePicoShieldI2CConnection.png[]
 
 === Overview
 
-The new Grove - Temperature & Humidity Sensor is based on the DHT20 sensor. The DH20 is an upgraded version of the DHT11, compared with the previous version, the temperature and humidity measurement accuracy are higher, and the measurement range is larger. It features I2C output which means it is easier to use.
+The Grove - Temperature & Humidity Sensor is based on the DHT20 sensor. The DH20 is an upgraded version of the DHT11, compared with the previous version, the temperature and humidity measurement accuracy are higher, and the measurement range is larger. It features I2C output which means it is easier to use.
 
 === Hardware Details
 

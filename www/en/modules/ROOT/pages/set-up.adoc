@@ -8,9 +8,17 @@
 ** https://thepihut.com/products/raspberry-pi-pico[Pihut UK]
 ** https://uk.farnell.com/raspberry-pi/raspberry-pi-pico/mcu-board-rpi-pico-264kb-133mhz/dp/3643332[Farnell UK]#
 
+* Grove Shield For Pico
+** https://thepihut.com/products/grove-shield-for-raspberry-pi-pico-v1-0[PiHut UK]
+
+** https://uk.farnell.com/seeed-studio/103100142/shield-board-raspberry-pi-pico/dp/4007893[Farnell UK]
+
 * Radxa X4 
 ** https://radxa.com/products/x/x4/[Radxa]
 
+* Grove Shield for Radxa X4
+
+** https://github.com/LabVIEWCommunityTraining/RadxaX4-KiCAD-Files[github Page for KiCAD files]
 
 
 == Download the LabVIEW Drivers
