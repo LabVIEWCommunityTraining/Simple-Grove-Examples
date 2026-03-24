@@ -71,3 +71,9 @@ On the block diagram you can see that the selected Grove connector is input into
 Next we loop round the event structure and use the timeout to poll the Sensors using *Grove Thermocouple MCP9600.lvclass:Read Temperature.vi*. Pressing Stop will fire the Stop event and exit the loop.
 
 image::GroveI2CThermocoupleAmpMCP9600-BD.png[]
+
+== Grove I2C Strain Gauge
+
+=== Overview
+
+
