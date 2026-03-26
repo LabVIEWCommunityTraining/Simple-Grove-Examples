@@ -72,8 +72,47 @@ Next we loop round the event structure and use the timeout to poll the Sensors u
 
 image::GroveI2CThermocoupleAmpMCP9600-BD.png[]
 
-== Grove I2C Strain Gauge
+== Adafruit NAU7802 I2C Strain Gauge Module
 
 === Overview
+
+A strain gauge (also spelled strain gage) is a device used to measure strain on an object. Invented by Edward E. Simmons and Arthur C. Ruge in 1938, the most common type of strain gauge consists of an insulating flexible backing which supports a metallic foil pattern. As the object is deformed, the foil is deformed, causing its electrical resistance to change. This resistance change, usually measured using a Wheatstone bridge, is related to the strain by the quantity known as the gauge factor.
+
+From https://en.wikipedia.org/wiki/Strain_gauge[Wikipedia]
+
+=== Hardware Details
+
+The NAU7802 module contains a super-high-resolution 24-Bit differential ADC with extra gain and calibration circuitry that makes it perfect for measuring strain gauges / load cells or other sensors that have four wires that are connected in a Wheatstone bridge arrangement.
+
+image::NAU7802CCT.png[]
+
+Each breakout comes with a NAU7802 ADC chip, plus some support circuitry, and 4 terminal blocks that can be used to connect a 4-wire sensor.
+
+https://www.nuvoton.com/export/resource-files/en-us--DS_NAU7802_DataSheet_EN_Rev2.4.pdf[NAU7802 Datasheet]
+
+https://www.aliexpress.com/item/1005009558761314.html?spm=a2g0o.order_list.order_list_main.5.1a411802PrK5PB[NAU 7802 Strain Gauge Module]
+
+https://www.aliexpress.com/item/1005007487468178.html?spm=a2g0o.order_detail.order_detail_item.3.15e0f19c1xp3TH[Strain Gauge]
+
+=== Demo Video
+
+Here is a video that shows the set-up and running of the Adafruit NAU7802 I2C Strain Gauge Module
+
+video::BdaQqxTZXwk[youtube]
+
+=== Example Code
+
+Navigate to >>Scratchpad>>Grove>>Sensors>>**I2C NAU7802 Strain 24 Bit Gauge.vi**
+
+image::NAU7802I2CStrainGaugeModule-Project.png[]
+
+This VI uses NAU7802 Strain Gauge IC. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+
+image::NAU7802I2CStrainGaugeModule-FP.png[]
+
+On the block diagram you can see that the selected Grove connector is input into *Adafruit NAU7802 24bit Strain Gauge.lvclass:Init.vi*. We then can set PU_CTRL Register to start measuring using  *Adafruit NAU7802 24bit Strain Gauge.lvclass:Set PU_CTRL.vi* and set up the ADC using *Adafruit NAU7802 24bit Strain Gauge.lvclass:Set ADC.vi*
+Next we loop round the event structure and use the timeout to poll the Sensors using *Adafruit NAU7802 24bit Strain Gauge.lvclass:Read PU_CTRL.vi* if the Cycle Ready bit is high it means there is a reading available. If a reading is available we get the 24 bits using *Adafruit NAU7802 24bit Strain Gauge.lvclass:Read ADC.vi*. Pressing Stop will fire the Stop event and exit the loop.
+
+image::NAU7802I2CStrainGaugeModule-BD.png[]
 
 
