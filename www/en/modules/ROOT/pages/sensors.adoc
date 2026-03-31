@@ -94,6 +94,14 @@ https://www.aliexpress.com/item/1005009558761314.html?spm=a2g0o.order_list.order
 
 https://www.aliexpress.com/item/1005007487468178.html?spm=a2g0o.order_detail.order_detail_item.3.15e0f19c1xp3TH[Strain Gauge]
 
+This board uses the Qwiic connector, so we will need to use a Qwiic to Grove lead.. These can be bought directly or made to the circuit diagram below.
+
+image::QwiicToGroveConnector.png[]
+
+The wiring diagram for the board will therefore look like this.
+
+image::NAU7802Wiring.png[]
+
 === Demo Video
 
 Here is a video that shows the set-up and running of the Adafruit NAU7802 I2C Strain Gauge Module
