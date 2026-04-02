@@ -106,7 +106,7 @@ image::NAU7802Wiring.png[]
 
 Here is a video that shows the set-up and running of the Adafruit NAU7802 I2C Strain Gauge Module
 
-video::BdaQqxTZXwk[youtube]
+video::dy8eHkbQ16g[youtube]
 
 === Example Code
 
@@ -119,7 +119,7 @@ This VI uses NAU7802 Strain Gauge IC. Select the port for the connected Pico and
 image::NAU7802I2CStrainGaugeModule-FP.png[]
 
 On the block diagram you can see that the selected Grove connector is input into *Adafruit NAU7802 24bit Strain Gauge.lvclass:Init.vi*. We then can set PU_CTRL Register to start measuring using  *Adafruit NAU7802 24bit Strain Gauge.lvclass:Set PU_CTRL.vi* and set up the ADC using *Adafruit NAU7802 24bit Strain Gauge.lvclass:Set ADC.vi*
-Next we loop round the event structure and use the timeout to poll the Sensors using *Adafruit NAU7802 24bit Strain Gauge.lvclass:Read PU_CTRL.vi* if the Cycle Ready bit is high it means there is a reading available. If a reading is available we get the 24 bits using *Adafruit NAU7802 24bit Strain Gauge.lvclass:Read ADC.vi*. Pressing Stop will fire the Stop event and exit the loop.
+Next we loop round the event structure and use the timeout to poll the Sensors using *Adafruit NAU7802 24bit Strain Gauge.lvclass:Read PU_CTRL.vi* if the Cycle Ready bit is high it means there is a reading available. The timeout of the event loop is adjusted to suit the Samples Per Second. If a reading is available we get the 24 bits using *Adafruit NAU7802 24bit Strain Gauge.lvclass:Read ADC.vi*. Pressing Stop will fire the Stop event and exit the loop.
 
 image::NAU7802I2CStrainGaugeModule-BD.png[]
 

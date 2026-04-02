@@ -119,37 +119,37 @@ The Grove - I2C Motor Driver V1.3 (latest version) can directly control Stepper 
 
 https://wiki.seeedstudio.com/Grove-I2C_Motor_Driver_V1.3/#hardware-overview/[Grove - I2C Motor Driver V1.3]
 
-=== Demo Video
+=== Demo Video DC Motor Drive
 
-TBD
+This video demonstrates the Grove L298 Motor Drive board used with 2 DC motors.
 
-video::_c_6OBtgLvg[youtube]
+video::j-9ya1YdSZY[youtube]
 
 === Example Code
+
+Navigate to >>Scratchpad>>Grove>>Gadgets>>Motor Drive>>**I2C L298P DC Motor Drive.vi**
+
+image::GroveI2CDCMotorDriveL298-Project.png[]
+
+This VI uses the L298P board to rotate 2 wheels forward and backward. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+
+image::GroveI2CDCMotorDriveL298-FP.png[]
+
+On the block diagram you can see that the selected Grove connector dictates the GPIO Pins used for communication. This session connection is input into **Grove I2C L298P Motor Drive.lvclass:Init**. Next we set the PWM frequency to 515Hz using **Grove I2C L298P Motor Drive.lvclass:Set PWM Frequency.vi**. We the loop round the event structure waiting for Value Change events for the Steering, Speed, M1 and M2 sliders.
+Pressing Stop will fire the Stop event and exit the loop.
+
+image::GroveI2CDCMotorDriveL298-BD.png[]
 
 == Encoder
 
 === Hardware Details
 
 
-
-
 === Demo Video
 
 
 === Example Code
 
-
-
-== NFC Reader/Writer
-
-=== Hardware Details
-
-
-=== Demo Video
-
-
-=== Example Code
 
 
 

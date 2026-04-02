@@ -24,7 +24,7 @@ video::w0F2TlSiCmE[youtube]
 
 === Example Code
 
-Navigate to >>Scratchpad>>Grove>>Digital Inputs>>Grove Digital Out.vi
+Navigate to >>Scratchpad>>Grove>>Digital Inputs>>**Grove Digital Out.vi**
 
 image::GroveDigitalOutLEDProject.png[]
 
@@ -40,6 +40,34 @@ On the block diagram you can see that the selected Grove connector dictates the 
 The video also shows the same VI being used to switch a relay on and off.
 
 image::GroveDigitalOutLEDBD.png[]
+
+== SPST Relay Board / MOSFET Switch
+
+=== Overview
+
+This is essentially the same VI as the LED output VI, but with different graphics. There are some demo videos just to show wiring and operation.
+
+=== Hardware Details
+
+https://wiki.seeedstudio.com/Grove-Relay/[Grove Relay Board]
+
+https://wiki.seeedstudio.com/Grove-MOSFET/[Grove MOSFET]
+
+=== Demo Videos
+
+Here is a video that shows the set-up and running of the Grove Relay Board
+
+video::-c-kp2PiIa4[youtube]
+
+Here is a video that shows the set-up and running of the Grove MOSFet Board
+
+video::T9XEYUTOUW0[youtube]
+
+=== Example Code
+
+Navigate to >>Scratchpad>>Grove>>Digital Outputs>>**Grove Digital Out Switch.vi**
+
+image::GroveSwitch-Project.png[]
 
 == I2C 4 Channel SPDT Relay Board
 
@@ -69,7 +97,7 @@ video::0Jp3GYXE-z4[youtube]
 
 === Example Code
 
-Navigate to >>Scratchpad>>Grove>>Switches>>I2C 4 Channel SPDT Relay Board.vi
+Navigate to >>Scratchpad>>Grove>>Switches>>**I2C 4 Channel SPDT Relay Board.vi**
 
 image::Grove4ChannelSPDTRelayProject.png[]
 
@@ -80,7 +108,7 @@ You can now click on the switch symbols and the corresponding relay will toggle 
 
 image::I2C4ChanSPDTRelayBoardFP.png[]
 
-On the block diagram you can see that the selected Grove connector dictates the GPIO Pin for the IC2 Port. We set up the IC2 port for the device in **Init.vi**. Next we loop round the event structure and wait for a button on the Front Panel to be pressed. When a switch is detected (event:Switch1,Switch2,Switch3 or Switch4) *Set Switch.vi* recieves the required settings. If the Load button is pressed the new board address is entered and the system re-initialise.  Pressing Stop will fire the Stop event and exit the loop.
+On the block diagram you can see that the selected Grove connector dictates the GPIO Pin for the IC2 Port. We set up the IC2 port for the device in **Init.vi**. Next we loop round the event structure and wait for a button on the Front Panel to be pressed. When a switch is detected (event:Switch1,Switch2,Switch3 or Switch4) **Set Switch.vi** recieves the required settings. If the Load button is pressed the new board address is entered and the system re-initialise.  Pressing Stop will fire the Stop event and exit the loop.
 
 
 image::I2C4ChanSPDTRelayBoardBD.png[]
