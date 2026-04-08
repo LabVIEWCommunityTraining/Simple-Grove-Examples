@@ -140,17 +140,41 @@ Pressing Stop will fire the Stop event and exit the loop.
 
 image::GroveI2CDCMotorDriveL298-BD.png[]
 
-== Encoder
+== Incremental Rotary Encoder
+
+An incremental encoder is a type of rotary encoder that generates a series of electrical pulses as the encoder shaft is rotated. These pulses are used to measure the rotational position, speed, and direction of the shaft.
+
+This particular board is the Adafruit I2C Stemma QT Rotary Encoder with a SeeSaw protocol microcontroller and NeoPixel LED.
+
+Adafruit seesaw is a near-universal converter framework which allows you to add and extend hardware support to any I2C-capable microcontroller or microcomputer. Instead of getting separate I2C GPIO expanders, ADCs, PWM drivers, etc, seesaw can be configured to give a wide range of capabilities.
+
+https://learn.adafruit.com/adafruit-seesaw-atsamd09-breakout/overview[Adafruit seesaw an I2C to ... whatever! interface]
 
 === Hardware Details
 
+https://www.adafruit.com/product/5880[Adafruit I2C Stemma QT Rotary Encoder]
+
+This board uses the Qwiic connector, so we will need to use a Qwiic to Grove lead.. These can be bought directly or made to the circuit diagram below.
+
+image::QwiicToGroveConnector.png[]
 
 === Demo Video
 
+This video demonstrates the Adafruit Rotary Encoder
+
+video::j-9ya1YdSZY[youtube]
 
 === Example Code
+Navigate to >>Scratchpad>>Grove>>Gadgets>>AdaFruit SeeSaw>>Encoder>>**AdafruitSeesawEncoder.vi**
 
+image::AdaFruitI2CRotaryEncoder-Project.png[]
 
+This VI uses the Adafruit Enocder Breakout Board, this board has a small microcontroller running SeeSaw firmware. This gives a lot of functionality through I2C register setting and reading. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
 
+image::AdaFruitI2CRotaryEncoder-FP.png[]
 
+On the block diagram you can see that the selected Grove connector dictates the GPIO Pins used for communication. This session connection is input into **AdaFruit-Seesaw.lvclass:Init**. Next we set up GPIOs, Encoder and NeoPixel LED using **AdaFruit-Seesaw.lvclass:Init:NeoPixelInit.vi**,**AdaFruit-Seesaw.lvclass:Init:EncoderInit.vi**. We then initialise the NeoPixel Buffer by setting **AdaFruit-Seesaw.lvclass:Init:SetNeoPixelBuf.vi**,**AdaFruit-Seesaw.lvclass:Init:NeoPixelShow.vi**. We the loop round the event structure in the timeout checking the GPIO pins for the encoder interupt. If the encoder has changed it will read it. Changing the brightness or Color Box will change the Neopixel LED. If you press the rotary encoder a GPIO pin will change, this is caught in the timeout loop.
+Pressing Stop will fire the Stop event and exit the loop.
+
+image::AdaFruitI2CRotaryEncoder-BD.png[]
 
