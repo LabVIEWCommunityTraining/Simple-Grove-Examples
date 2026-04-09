@@ -162,7 +162,7 @@ image::QwiicToGroveConnector.png[]
 
 This video demonstrates the Adafruit Rotary Encoder
 
-video::j-9ya1YdSZY[youtube]
+video::bmwwQtxbOBA[youtube]
 
 === Example Code
 Navigate to >>Scratchpad>>Grove>>Gadgets>>AdaFruit SeeSaw>>Encoder>>**AdafruitSeesawEncoder.vi**
