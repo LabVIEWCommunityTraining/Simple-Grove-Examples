@@ -7,7 +7,7 @@
 
 An analog input can be thought of as a measurement or sensor reading. These will natively have a resolution of 12 bits, which can be thought of as a sensitivity across the range of the input. 12 bits= 4096 levels across the range.
 
-The Connections used are [A0,NC],[A1,A2],[A2,A1] and these correspond to GPIO Pins A0=GPIO26, A1=GPIO27, A1=GPIO28
+The Connections used are [A0,NC],[A0,A1],[A1,A2] and these correspond to GPIO Pins A0=GPIO26, A1=GPIO27, A1=GPIO28
 
 The connectors used are [A0],[A1],[A2] as shown below
 
@@ -22,11 +22,11 @@ https://wiki.seeedstudio.com/Grove-Rotary_Angle_Sensor[Rotary Angle Sensor]
 
 Here is a video that shows the set-up and running of the Rotary Angle Sensor
 
-video::0-suR8HejsY[youtube]
+video::8Zg_a9hUJ4c[youtube]
 
 === Example Code
 
-Navigate to >>Scratchpad>>Grove>>Analog Inputs>>Grove Read ADC.vi
+Navigate to >>Scratchpad>>Grove>>Analog Inputs>>**Grove Read ADC.vi**
 
 image::GroveReadADCProject.png[]
 
@@ -38,9 +38,45 @@ Links to various other similar boards are also on the Front Panel.
 
 image::GroveReadADCFP.png[]
 
-On the block diagram you can see that the selected Grove connector is input into *Configure AI.vi*. Next we loop round the event structure and use the timeout to poll the selected analog input using **AI Read Value.vi**. Pressing Stop will fire the Stop event and exit the loop.
+On the block diagram you can see that the selected Grove connector is input into **Configure AI.vi**. Next we loop round the event structure and use the timeout to poll the selected analog input using **AI Read Value.vi**. Pressing Stop will fire the Stop event and exit the loop.
 
 image::GroveReadADCBD.png[]
+
+== Grove Thumb Joystick
+
+=== Overview
+
+Grove - Thumb Joystick is a Grove compatible module which is very similar to the 'analog' joystick on PS2 (PlayStation 2) controllers. The X and Y axes return a number between 0 and 4096 representing position.
+
+The connectors used are [A1],[A2] as shown below because the joystick use 2 Analog Inputs. These correspond to GPIO Pins A1=GPIO27, A1=GPIO28
+
+image::GroveAnalogA1A2Connection.png.png[]
+
+=== Hardware Details
+
+https://wiki.seeedstudio.com/Grove-Thumb_Joystick[Grove Thumb Joystick]
+
+=== Demo Video
+
+Here is a video that shows the set-up and running of the Grove Thumb Joystick
+
+video::0-suR8HejsY[youtube]
+
+=== Example Code
+
+Navigate to >>Scratchpad>>Grove>>Analog Inputs>>**Grove Thumb Joystick.vi**
+
+image::GroveThumbJoystickProject.png[]
+
+This particular VI uses a Grove Thumb Joystick. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+
+You should be able to see the graph change corresponding to how you steer the joystick.
+
+image::GroveThumbJoystick-FP.png[]
+
+On the block diagram you can see that the selected Grove connector is input into 2 instances of **Configure AI.vi**. Next we loop round the event structure and use the timeout to poll the selected analog inputs using **AI Read Value.vi**. These value are displayed on an XY Graph. Pressing Stop will fire the Stop event and exit the loop.
+
+image::GroveThumbJoystick-BD.png[]
 
 == Grove I2C Analog Inputs
 

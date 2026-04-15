@@ -58,7 +58,7 @@ video::U05stmxbPzs[youtube]
 
 === Example Code
 
-Navigate to >>Scratchpad>>Grove>>Displays>>I2C Grove 64x128OLED_SSD1315_Graph.vi
+Navigate to >>Scratchpad>>Grove>>Displays>>**I2C Grove 64x128OLED_SSD1315_Graph.vi**
 
 image::GroveOLED64x128-SSD1315-GraphProject.png[]
 
@@ -109,6 +109,43 @@ Pressing Stop will exit the loop.
 
 image::GroveOLED64x48-SSD1306-GraphBD.png[]
 
+== 8x8 Matrix LED Driver (HT16K33)
+
+=== Overview
+
+The LED Matrix Driver board is low cost and usually used to display simple numbers and images. The Grove - LED Matrix Driver is the I2C based product which allows you to control the LED matrix. The 8*8 LED Matrix can be assembled and unassembled from the driver board easily, so it is convenient to change different color LED matrix display based on your need. The board can be set to 8 addresses allowing 8 boards to be run from a single I2C port.
+
+=== Hardware Details
+
+https://wiki.seeedstudio.com/Grove-LED_Matrix_Driver-HT16K33//[Grove - LED Matrix Driver (HT16K33)]
+
+=== Demo Video
+
+Here is a video that demonstrates the capabilities of the 8x8 Matrix LED Board
+
+video::OjOcmV7EbRs[youtube]
+
+=== Example Code
+
+Navigate to >>Scratchpad>>Grove>>Displays>>**I2C Grove 8x8Matrix LED.vi**
+
+image::GroveI2C8x8MatrixLEDDriver-Project.png[]
+
+Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+
+Various pre-programed examples are available by selecting Set Scrolling Text, Set Char, Set Icon and Set Custom Char to display your chosen number or string.
+
+image::GroveI2C8x8MatrixLEDDriver-FP.png[]
+
+We set up the IC2 port for the device in **Grove I2C Matrix LED Driver.lvclass:Init**
+
+On the block diagram you can see that the selected Grove connector dictates the GPIO Pin for the I2C Connector. Next we loop round an event structure and use the detect button value change events for Set Char, Set Icon or Set Custom Char. The fired event will use the associated data as an input to the selected function.
+In the timeout loop we can set or stop the scrolling function by toggling the Set Scrolling Text Button. The buffer is updated on a Scrolling Text Value change event.
+
+Pressing Stop will fire the Stop event and exit the loop.
+
+image::GroveI2C8x8MatrixLEDDriver-BD.png[]
+
 == 8x8 RGB Matrix LED
 
 === Overview
@@ -125,10 +162,9 @@ Here is a video that demonstrates the capabilities of the 8x8 RGB Matrix LED Boa
 
 video::OjOcmV7EbRs[youtube]
 
-
 === Example Code
 
-Navigate to >>Scratchpad>>Grove>>Displays>>I2C Grove 8x8 Matrix LED Examples.vi
+Navigate to >>Scratchpad>>Grove>>Displays>>**I2C Grove 8x8 RGB Matrix LED Examples.vi**
 
 image::Grove8x8RGBLEDExamplesProject.png[]
 
@@ -138,14 +174,16 @@ Various pre-programed examples are available by selecting the colour from the Co
 
 Set Emoji or Set Animation will display your selected Emoji or Animation.
 
-
 image::Grove8x8RGBLEDExamplesFP.png[]
 
 We set up the IC2 port for the device in **Grove 2 RGB LED Matrix.lvclass:Init**
+
 
 On the block diagram you can see that the selected Grove connector dictates the GPIO Pin for the I2C Connector. Next we loop round an event structure and use the detect button value change events for Set Number, Set String, Set Emojo or Set Animation. The fired event will use the associated data as an input to the selected function. 
 
 Pressing Stop will fire the Stop event and exit the loop.
 
 image::Grove8x8RGBLEDExamplesBD.png[]
+
+
 

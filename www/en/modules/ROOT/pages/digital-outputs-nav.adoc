@@ -15,6 +15,8 @@ https://wiki.seeedstudio.com/Grove-Red_LED/[Grove LED]
 
 https://wiki.seeedstudio.com/Grove-Relay/[Grove Relay]
 
+https://wiki.seeedstudio.com/Grove-Electromagnet/[Electro Magnet]
+
 
 === Demo Video
 
@@ -22,9 +24,15 @@ Here is a video that shows the set-up and running of the LED and Relay Examples
 
 video::w0F2TlSiCmE[youtube]
 
+This video demonstrates the Electro-Magnet, using the **Grove Digital Out Switch.vi**
+
+video::w0F2TlSiCmE[youtube]
+
 === Example Code
 
-Navigate to >>Scratchpad>>Grove>>Digital Inputs>>**Grove Digital Out.vi**
+Navigate to >>Scratchpad>>Grove>>Digital Inputs>>**Grove Digital Out.vi** or **Grove Digital Out Switch.vi**
+
+These examples are very similar
 
 image::GroveDigitalOutLEDProject.png[]
 
