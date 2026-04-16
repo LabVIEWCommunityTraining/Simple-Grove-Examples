@@ -26,7 +26,7 @@ video::w0F2TlSiCmE[youtube]
 
 This video demonstrates the Electro-Magnet, using the **Grove Digital Out Switch.vi**
 
-video::w0F2TlSiCmE[youtube]
+video::D7qum9ShKMQ[youtube]
 
 === Example Code
 

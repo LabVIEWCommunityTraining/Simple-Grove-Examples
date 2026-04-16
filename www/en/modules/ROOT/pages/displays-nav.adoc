@@ -55,6 +55,10 @@ Here is a video that demonstrates how to use the 64x128 OLED display
 
 video::U05stmxbPzs[youtube]
 
+And here's the monochrome version
+
+video::8r_H04guJeg[youtube]
+
 
 === Example Code
 
@@ -123,7 +127,7 @@ https://wiki.seeedstudio.com/Grove-LED_Matrix_Driver-HT16K33//[Grove - LED Matri
 
 Here is a video that demonstrates the capabilities of the 8x8 Matrix LED Board
 
-video::OjOcmV7EbRs[youtube]
+video::IMQMEPpHomw[youtube]
 
 === Example Code
 

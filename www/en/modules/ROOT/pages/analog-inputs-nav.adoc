@@ -60,7 +60,7 @@ https://wiki.seeedstudio.com/Grove-Thumb_Joystick[Grove Thumb Joystick]
 
 Here is a video that shows the set-up and running of the Grove Thumb Joystick
 
-video::0-suR8HejsY[youtube]
+video::xwYLX15S22o[youtube]
 
 === Example Code
 
