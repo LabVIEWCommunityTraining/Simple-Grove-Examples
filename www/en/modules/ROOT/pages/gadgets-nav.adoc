@@ -178,3 +178,76 @@ Pressing Stop will fire the Stop event and exit the loop.
 
 image::AdaFruitI2CRotaryEncoder-BD.png[]
 
+= Adafruit SeeSaw SAMD09 Micro-Controller
+
+Adafruit seesaw is a near-universal converter framework which allows you to add and extend hardware support to any I2C-capable microcontroller or microcomputer. Instead of getting separate I2C GPIO expanders, ADCs, PWM drivers, etc, seesaw can be configured to give a wide range of capabilities.
+
+image::images\AdafruitSeesawSAMD09Clean.png[]
+
+As an example the ATSAMD09 breakout with seesaw offers
+
+3 x 12-bit ADC inputs
+3 x 8-bit PWM outputs
+7 x GPIO with selectable pullup or pulldown
+1 x NeoPixel output (up to 170 pixels)
+1 x EEPROM with 64 byte of NVM memory (handy for storing small access tokens or MAC addresses)
+1 x Interrupt output that can be triggered by any of the accessories
+2 x I2C address selection pins
+1 x Activity LED
+
+=== Hardware Details
+
+https://learn.adafruit.com/adafruit-seesaw-atsamd09-breakout/overview[Adafruit SeeSaw AtSAMD09 Breakout]
+
+== NeoPixel Ring
+The rotary encoder board explained earlier uses a SeeSaw enabled micro-controller that has a single neo-pixel LED. This example uses a 12 LED Neo-pixel ring.
+
+=== Hardware Details
+
+https://www.adafruit.com/product/1643[NeoPixel Ring - 12 x 5050 RGB LED with Integrated Drivers]
+
+The input needs to be connected to the GPIO pin and GND and Voltage connected.
+
+image::AdafruitSeesawSAMD09NeoPixel.png[]
+
+=== Demo Video
+
+This video demonstrates the Adafruit SAMD09 Running a NeoPixel 12 LED Ring
+
+video::nMGVk3nTuzY[youtube]
+
+=== Example Code
+Navigate to >>Scratchpad>>Grove>>Gadgets>>AdaFruit SeeSaw>>NeoPixel>>**AdafruitSeesawNeoPixel.vi**
+
+== GPIO
+The SMD09 breakout offers 7 GPIO digital pins (9,10,11,14,15,24 and 25). These can be used for Dgital Outputs or Inputs depending on the direction set.
+
+=== Demo Video
+
+This video demonstrates the Adafruit SAMD09s GPIO functionality
+
+video::h5_qb-tfAdk[youtube]
+
+=== Example Code
+Navigate to >>Scratchpad>>Grove>>Gadgets>>AdaFruit SeeSaw>>GPIO>>**AdafruitSeesawGPIO.vi**
+
+== Encoder
+
+TBD
+
+== Analog Inputs
+
+TBD
+
+== Analog Outputs PWM
+
+TBD
+
+== EEPROM
+
+TBD
+
+== Status
+
+TBD
+
