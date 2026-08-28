@@ -189,5 +189,40 @@ Pressing Stop will fire the Stop event and exit the loop.
 
 image::Grove8x8RGBLEDExamplesBD.png[]
 
+== Grove - 0.54 inch Red Quad Alphanumeric Display
 
+=== Overview
+
+This module is a 4 digit alphanumeric display with high brightness and red backlight, each digit is consists of a 14-segment digital tube. The commonly used 7-segment display, such as our Grove - 4-Digit Display can only display the numbers 0-9 and a limited number of letters. In contrast, the 14-segment digital display does not have this limitation, it can display all the characters, that's why we call it alphanumeric display.
+
+=== Hardware Details
+
+https://wiki.seeedstudio.com/Grove-0.54_inch_Red_Quad_Alphanumeric_Display/[Grove - 0.54 inch Red Quad Alphanumeric Display]
+
+=== Demo Video
+
+Here is a video that shows the module displaying numbers and characters.
+
+video::OjOcmV7EbRs[youtube]
+
+=== Example Code
+
+Navigate to >>Scratchpad>>Grove>>Displays>>**I2C Grove AlphaNumeric LED.vi**
+
+image::GroveQuadAlphaNumericDisplayProject.png[]
+
+Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+
+Enter 4 numbers or 4 Characters and press Set Number or Set Characters
+
+image::GroveQuadAlphaNumericDisplayBD.png[]
+
+We set up the IC2 port for the device in **HT16K33 LED Driver.lvclass:Init**
+
+
+On the block diagram you can see that the selected Grove connector dictates the GPIO Pin for the I2C Connector. Next we loop round an event structure and use the detect button value change events for Set Number or Set Characters. The fired event will use the associated data as an input to the selected function. 
+
+Pressing Stop will fire the Stop event and exit the loop.
+
+image::GroveQuadAlphaNumericDisplayBD.png[]
 

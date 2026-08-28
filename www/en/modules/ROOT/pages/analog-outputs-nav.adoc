@@ -88,3 +88,36 @@ On the block diagram you can see that the selected Grove connector dictates the 
 
 image::M5StackDAC2AnalogOutputBD.png[]
 
+== SOLDER MCP4018 Digital Potentiometer
+
+These handy devices give you I2C programmable resistor functionality, allowing 0-127 steps between 5kOhm, 10kOhm, 50kOhm or 100kOhm depending on the selected module. 
+
+=== Overview
+
+These are QWIIC compatible devices, so will need a QWIIC to Grove lead to work. 
+
+The GPIO Pins used are [I2C0] or [I2C1]
+
+=== Hardware Details
+
+https://docs.soldered.com/digipot/overview/[MCP4018 digital potentiometer Module]
+
+=== Demo Video
+
+Here is a video that shows 3 digital potentiometer modules running through a I2C multiplexer
+
+video::KhWh9l7JJ1Y[youtube]
+
+=== Example Code
+
+Navigate to >>Scratchpad>>Grove>>Analog Outputs>>**I2C MCP4018 Digipot.vi**
+
+image::MCP4018DigitalPotentiometerProject.png[]
+
+This particular VI uses the MCP4018 digipot to adjust the resistance between GND and Wiper (W). Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+
+image::MCP4018DigitalPotentiometerFP.png[]
+
+On the block diagram you can see that the selected Grove connector dictates the GPIO Pin for the IC2 Port. We set up the IC2 port for the device in **Init.vi**. Next we loop round the event structure and wait for a Sliders V0 to be changed. When change has been detected the new values are input into the **Write Pot.vi**.  Pressing Stop will fire the Stop event and exit the loop.
+
+image::MCP4018DigitalPotentiometerBD.png[]
