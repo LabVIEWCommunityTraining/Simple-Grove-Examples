@@ -35,7 +35,7 @@ image::GroveI2CGestureSensor-PAJ7620U2-FP.png[]
 
 On the block diagram you can see that the selected Grove connector dictates the GPIO Pins used for communication. This session connection is input into **Grove Gesture Sensor PAJ7620U2.lvclass:Init**.
 
-Next we loop round and the while loop and read the detected gesture using *Grove Gesture Sensor PAJ7620U2.lvclass:ReadGesture.vi* which returns a numbe corresponding with the detected gesture. A picture ring is used to give a nice graphical flourish on the front panel.
+Next we loop round and the while loop and read the detected gesture using *Grove Gesture Sensor PAJ7620U2.lvclass:ReadGesture.vi* which returns a number corresponding with the detected gesture. A picture ring is used to give a nice graphical flourish on the front panel.
 
 Pressing Stop will exit the loop.
 
@@ -182,7 +182,7 @@ image::AdaFruitI2CRotaryEncoder-BD.png[]
 
 Adafruit seesaw is a near-universal converter framework which allows you to add and extend hardware support to any I2C-capable microcontroller or microcomputer. Instead of getting separate I2C GPIO expanders, ADCs, PWM drivers, etc, seesaw can be configured to give a wide range of capabilities.
 
-image::images\AdafruitSeesawSAMD09Clean.png[]
+image::AdafruitSeesawSAMD09Clean.png[]
 
 As an example the ATSAMD09 breakout with seesaw offers
 
@@ -222,6 +222,9 @@ Navigate to >>Scratchpad>>Grove>>Gadgets>>AdaFruit SeeSaw>>NeoPixel>>**AdafruitS
 == GPIO
 The SMD09 breakout offers 7 GPIO digital pins (9,10,11,14,15,24 and 25). These can be used for Dgital Outputs or Inputs depending on the direction set.
 
+=== Hardware Details
+
+
 === Demo Video
 
 This video demonstrates the Adafruit SAMD09s GPIO functionality
@@ -251,3 +254,39 @@ TBD
 
 TBD
 
+== Grove I2C Multiplexer Hub
+
+=== Overview
+
+I2C devices must use different addresses in the same bus system. However, with the help of Grove - 8 Channel I2C Hub, you can plug up to 8 same-address I2C devices to the same Grove I2C system. All thanks to the TCA9548A I2C Multiplexer Chip. It adopts time-division multiplexing technology so that the same controller can control 8 I2C devices with the same address. No more worrying about address conflicts. This is really useful if you have a load of sensor boards with the same address.
+
+=== Hardware Details
+
+https://wiki.seeedstudio.com/Grove-8-Channel-I2C-Multiplexer-I2C-Hub-TCA9548A/[Grove - 8 Channel I2C Multiplexer/I2C Hub (TCA9548A)]
+
+=== Demo Video
+
+This video demonstrates the Mux switching to 3 digipot boards with the same address
+
+video::5MPWDghnn5Q[youtube]
+
+=== Example Code
+
+Navigate to >>Scratchpad>>Grove>>Gadgets>>I2C Mux and Digipots.vi
+
+image::GroveI2C8WayMuxProject.png[]
+
+Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+
+Click on the channel you want to connect (can be more than 1). Adjust the Digipot and measure the resistance between GND and W (wiper).
+
+image::GroveI2C8WayMuxFP.png[]
+
+On the block diagram you can see that the selected Grove connector dictates the GPIO Pins used for communication. This session connection is input into **TCA9548A I2C Multiplexer.lvclass:Init**.
+
+Next we loop round and the while loop and if a button is pressed we set the new channel numbers with  *TCA9548A I2C Multiplexer.lvclass:Set Mux.vi* .
+
+Pressing Stop will exit the loop.
+
+
+image::GroveI2C8WayMuxBD.png[]
