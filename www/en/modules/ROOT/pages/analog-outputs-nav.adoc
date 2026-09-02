@@ -106,7 +106,7 @@ https://docs.soldered.com/digipot/overview/[MCP4018 digital potentiometer Module
 
 Here is a video that shows 3 digital potentiometer modules running through a I2C multiplexer
 
-video::KhWh9l7JJ1Y[youtube]
+video::KYUzABpslXA[youtube]
 
 === Example Code
 

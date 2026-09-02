@@ -203,7 +203,8 @@ https://wiki.seeedstudio.com/Grove-0.54_inch_Red_Quad_Alphanumeric_Display/[Grov
 
 Here is a video that shows the module displaying numbers and characters.
 
-video::OjOcmV7EbRs[youtube]
+video::rFduyVa79vk[youtube]
+
 
 === Example Code
 
