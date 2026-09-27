@@ -42,7 +42,7 @@ Pressing Stop will exit the loop.
 
 image::GroveI2CGestureSensor-PAJ7620U2-BD.png[]
 
-== Grove 6 Axis Gyro Accellerometer
+== Grove 6 Axis Gyro Accelerometer
 
 Grove - 6-Axis Accelerometer&Gyroscope is a cost-effective Grove interfaced and integrated sensor combination of 3-axis digital accelerometer and 3-axis digital gyroscope.
 
@@ -178,7 +178,7 @@ Pressing Stop will fire the Stop event and exit the loop.
 
 image::AdaFruitI2CRotaryEncoder-BD.png[]
 
-= Adafruit SeeSaw SAMD09 Micro-Controller
+== Adafruit SeeSaw SAMD09 Micro-Controller
 
 Adafruit seesaw is a near-universal converter framework which allows you to add and extend hardware support to any I2C-capable microcontroller or microcomputer. Instead of getting separate I2C GPIO expanders, ADCs, PWM drivers, etc, seesaw can be configured to give a wide range of capabilities.
 
@@ -199,7 +199,7 @@ As an example the ATSAMD09 breakout with seesaw offers
 
 https://learn.adafruit.com/adafruit-seesaw-atsamd09-breakout/overview[Adafruit SeeSaw AtSAMD09 Breakout]
 
-== NeoPixel Ring
+=== NeoPixel Ring
 The rotary encoder board explained earlier uses a SeeSaw enabled micro-controller that has a single neo-pixel LED. This example uses a 12 LED Neo-pixel ring.
 
 [underline]#*Hardware Details*#
@@ -219,7 +219,7 @@ video::nMGVk3nTuzY[youtube]
 [underline]#*Example Code*#
 Navigate to >>Scratchpad>>Grove>>Gadgets>>AdaFruit SeeSaw>>NeoPixel>>**AdafruitSeesawNeoPixel.vi**
 
-== GPIO
+=== GPIO
 The SMD09 breakout offers 7 GPIO digital pins (9,10,11,14,15,24 and 25). These can be used for Dgital Outputs or Inputs depending on the direction set.
 
 [underline]#*Hardware Details*#
@@ -234,23 +234,23 @@ video::h5_qb-tfAdk[youtube]
 [underline]#*Example Code*#
 Navigate to >>Scratchpad>>Grove>>Gadgets>>AdaFruit SeeSaw>>GPIO>>**AdafruitSeesawGPIO.vi**
 
-== Encoder
+=== Encoder
 
 TBD
 
-== Analog Inputs
+=== Analog Inputs
 
 TBD
 
-== Analog Outputs PWM
+=== Analog Outputs PWM
 
 TBD
 
-== EEPROM
+=== EEPROM
 
 TBD
 
-== Status
+=== Status
 
 TBD
 

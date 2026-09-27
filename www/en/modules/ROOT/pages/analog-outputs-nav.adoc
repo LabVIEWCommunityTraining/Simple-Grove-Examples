@@ -2,7 +2,7 @@
 :page-toclevels: 2
 
 == Standard Analog Output PWM
-=== Overview
+[underline]#*Overview*#
 
 An analog output can be thought of as a way of generating a signal, the standard way this is done on a Pico is using a PWM square-wave.
 
@@ -15,18 +15,18 @@ image::GrovePicoShieldAnalogConnections.png[]
 This example uses the passive buzzer module but the source code is also applicable for other similar Grove Modules.
 
 
-=== Hardware Details
+[underline]#*Hardware Details*#
 
 https://wiki.seeedstudio.com/Grove-Passive-Buzzer/[Grove Passive Buzzer]
 
 
-=== Demo Video
+[underline]#*Demo Video*#
 
 Here is a video that shows the set-up and running of the Passive buzzer using a piano scale to demonstrate Frequency and Duty Cycle
 
 video::QSPMtF8XWTE[youtube]
 
-=== Example Code
+[underline]#*Example Code*#
 
 Navigate to >>Scratchpad>>Grove>>Analog Output PWM>>**Piano PWM AO.vi**
 
@@ -50,7 +50,7 @@ There are also options that communicate using I2C. These will use connectors I2C
 
 image::GrovePicoShieldI2CConnection.png[]
 
-=== Overview
+[underline]#*Overview*#
 
 This example uses the M5Stack DAC 2 Module, there are other similar modules that may work with this code as it uses the GP8313 integrated circuit. These are Grove compatible modules.
 
@@ -59,7 +59,7 @@ The GPIO Pins used are [I2C0] or [I2C1]
 image::GrovePicoShieldI2CConnection.png[]
 
 
-=== Hardware Details
+[underline]#*Hardware Details*#
 
 https://shop.m5stack.com/products/dac-2-i2c-unit-gp8413[M5Stack DAC2 Module]
 
@@ -67,13 +67,13 @@ https://cdn.robotshop.com/media/M/Mst/RB-Mst-408/pdf/dac-2-i2c-unit-gp8413-schem
 
 https://www.dfrobot.com/product-2756.html[DFRobot boards may also work]
 
-=== Demo Video
+[underline]#*Demo Video*#
 
 Here is a video that shows the set-up and running of the M5Stack DAC2
 
 video::KhWh9l7JJ1Y[youtube]
 
-=== Example Code
+[underline]#*Example Code*#
 
 Navigate to >>Scratchpad>>Grove>>Analog Outputs>>**I2C An Out M5StackDAC2.vi**
 
@@ -92,23 +92,23 @@ image::M5StackDAC2AnalogOutputBD.png[]
 
 These handy devices give you I2C programmable resistor functionality, allowing 0-127 steps between 5kOhm, 10kOhm, 50kOhm or 100kOhm depending on the selected module. 
 
-=== Overview
+[underline]#*Overview*#
 
 These are QWIIC compatible devices, so will need a QWIIC to Grove lead to work. 
 
 The GPIO Pins used are [I2C0] or [I2C1]
 
-=== Hardware Details
+[underline]#*Hardware Details*#
 
 https://docs.soldered.com/digipot/overview/[MCP4018 digital potentiometer Module]
 
-=== Demo Video
+[underline]#*Demo Video*#
 
 Here is a video that shows 3 digital potentiometer modules running through a I2C multiplexer
 
 video::KYUzABpslXA[youtube]
 
-=== Example Code
+[underline]#*Example Code*#
 
 Navigate to >>Scratchpad>>Grove>>Analog Outputs>>**I2C MCP4018 Digipot.vi**
 

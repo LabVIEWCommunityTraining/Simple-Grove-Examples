@@ -7,7 +7,7 @@ image::GrovePicoShieldI2CConnection.png[]
 
 == HD44870 LCD Display with RGB Backlight Controller
 
-=== Overview
+[underline]#*Overview*#
 
 The LCD display is a useful, robust low power way show system information. The RGB backlight also can convey extra information like Warnings and Alerts.
 
@@ -15,13 +15,13 @@ The LCD display is a useful, robust low power way show system information. The R
 
 https://wiki.seeedstudio.com/Grove-LCD_RGB_Backlight/[Grove - LCD RGB Backlight]
 
-=== Demo Video
+[underline]#*Demo Video*#
 
 Here is a video that shows the set-up and running of the LCD Display with RGB Backlight.
 
 video::_c_6OBtgLvg[youtube]
 
-=== Example Code
+[underline]#*Example Code*#
 
 Navigate to >>Scratchpad>>Grove>>Displays>>Grove RGB I2C LCD Full.vi
 
@@ -41,15 +41,15 @@ image::GroveRGBI2CLCDBD.png[]
 
 == SSD1315 64x128 OLED Display
 
-=== Overview
+[underline]#*Overview*#
 
 This example shows how to use a 2D picture control to display on a 64x128 monochrome OLED display
 
-=== Hardware Details
+[underline]#*Hardware Details*#
 
 https://wiki.seeedstudio.com/Grove-OLED-Display-0.96-SSD1315/#feature[Grove - OLED Display 0.96" (SSD1315)]
 
-=== Demo Video
+[underline]#*Demo Video*#
 
 Here is a video that demonstrates how to use the 64x128 OLED display
 
@@ -60,7 +60,7 @@ And here's the monochrome version
 video::8r_H04guJeg[youtube]
 
 
-=== Example Code
+[underline]#*Example Code*#
 
 Navigate to >>Scratchpad>>Grove>>Displays>>**I2C Grove 64x128OLED_SSD1315_Graph.vi**
 
@@ -82,20 +82,20 @@ image::GroveOLED64x128-SSD1315-GraphBD.png[]
 
 == SSD1306 64x48 OLED Display
 
-=== Overview
+[underline]#*Overview*#
 
 This example shows how to use a 2D picture control to display on a tiny monochrome OLED display
 
-=== Hardware Details
+[underline]#*Hardware Details*#
 
 https://wiki.seeedstudio.com/Grove-OLED-Display-0.66-SSD1306_v1.0/#feature[Grove - OLED Display 0.66" (SSD1306)]
 
-=== Demo Video
+[underline]#*Demo Video*#
 
 video::w0F2TlSiCmE[youtube]
 
 
-=== Example Code
+[underline]#*Example Code*#
 
 Navigate to >>Scratchpad>>Grove>>Displays>>I2C Grove 64x48OLED_SSD1306_Graph.vi
 
@@ -115,21 +115,21 @@ image::GroveOLED64x48-SSD1306-GraphBD.png[]
 
 == 8x8 Matrix LED Driver (HT16K33)
 
-=== Overview
+[underline]#*Overview*#
 
 The LED Matrix Driver board is low cost and usually used to display simple numbers and images. The Grove - LED Matrix Driver is the I2C based product which allows you to control the LED matrix. The 8*8 LED Matrix can be assembled and unassembled from the driver board easily, so it is convenient to change different color LED matrix display based on your need. The board can be set to 8 addresses allowing 8 boards to be run from a single I2C port.
 
-=== Hardware Details
+[underline]#*Hardware Details*#
 
 https://wiki.seeedstudio.com/Grove-LED_Matrix_Driver-HT16K33//[Grove - LED Matrix Driver (HT16K33)]
 
-=== Demo Video
+[underline]#*Demo Video*#
 
 Here is a video that demonstrates the capabilities of the 8x8 Matrix LED Board
 
 video::IMQMEPpHomw[youtube]
 
-=== Example Code
+[underline]#*Example Code*#
 
 Navigate to >>Scratchpad>>Grove>>Displays>>**I2C Grove 8x8Matrix LED.vi**
 
@@ -152,21 +152,21 @@ image::GroveI2C8x8MatrixLEDDriver-BD.png[]
 
 == 8x8 RGB Matrix LED
 
-=== Overview
+[underline]#*Overview*#
 
 8x8 RGB LED Matrix is great for simple image display, 64 pixel leds and 255 colors for each pixel means almost infinite possibilities. However, the complicated wiring of the matrix is daunting. Now we present the Grove - RGB LED Matrix w/Driver for you, leave all the complex and variable wireing and soldering behind, just one single grove connector to control the RGB 8x8 LED matrix easily.
 
-=== Hardware Details
+[underline]#*Hardware Details*#
 
 https://wiki.seeedstudio.com/Grove-RGB_LED_Matrix_w-Driver/[Grove - RGB LED Matrix w/Driver]
 
-=== Demo Video
+[underline]#*Demo Video*#
 
 Here is a video that demonstrates the capabilities of the 8x8 RGB Matrix LED Board
 
 video::OjOcmV7EbRs[youtube]
 
-=== Example Code
+[underline]#*Example Code*#
 
 Navigate to >>Scratchpad>>Grove>>Displays>>**I2C Grove 8x8 RGB Matrix LED Examples.vi**
 
@@ -191,22 +191,22 @@ image::Grove8x8RGBLEDExamplesBD.png[]
 
 == Grove - 0.54 inch Red Quad Alphanumeric Display
 
-=== Overview
+[underline]#*Overview*#
 
 This module is a 4 digit alphanumeric display with high brightness and red backlight, each digit is consists of a 14-segment digital tube. The commonly used 7-segment display, such as our Grove - 4-Digit Display can only display the numbers 0-9 and a limited number of letters. In contrast, the 14-segment digital display does not have this limitation, it can display all the characters, that's why we call it alphanumeric display.
 
-=== Hardware Details
+[underline]#*Hardware Details*#
 
 https://wiki.seeedstudio.com/Grove-0.54_inch_Red_Quad_Alphanumeric_Display/[Grove - 0.54 inch Red Quad Alphanumeric Display]
 
-=== Demo Video
+[underline]#*Demo Video*#
 
 Here is a video that shows the module displaying numbers and characters.
 
 video::rFduyVa79vk[youtube]
 
 
-=== Example Code
+[underline]#*Example Code*#
 
 Navigate to >>Scratchpad>>Grove>>Displays>>**I2C Grove AlphaNumeric LED.vi**
 

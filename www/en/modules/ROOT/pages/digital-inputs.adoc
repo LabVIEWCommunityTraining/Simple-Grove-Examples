@@ -3,7 +3,7 @@
 
 == Standard Digital Input
 
-=== Overview
+[underline]#*Overview*#
 
 A digital input can be thought of as the reading from a button, a switch or a digital sensor. These examples use the GPIO Pins [D16,D17],[D18,D19],[D20,D21] that correspond to connectors D16,D18 and D20 on the grove hat.
 
@@ -12,12 +12,12 @@ image::GroveDigitalConnectionsPico.png[]
 This example uses the grove button module but the source code is also applicable for other similar Grove Modules.
 
 
-=== Hardware Details
+[underline]#*Hardware Details*#
 
 https://wiki.seeedstudio.com/Grove-Dual-Button/#features[Grove Dual Button]
 
 
-=== Demo Video
+[underline]#*Demo Video*#
 
 
 Here is a video that shows the set-up and running of the Dual Button Digital Inputs
@@ -25,7 +25,7 @@ Here is a video that shows the set-up and running of the Dual Button Digital Inp
 video::ViA9pmmxI2Q[youtube]
 
 
-=== Example Code
+[underline]#*Example Code*#
 
 Navigate to menu:Scratchpad[Grove > Digital Inputs > Grove Digital In.vi]
 
