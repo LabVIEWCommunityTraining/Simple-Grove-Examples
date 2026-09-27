@@ -35,6 +35,9 @@ Download the latest drivers
 
 . Load firmware on the Pico by pressing the bootsel button and powering on the Pico.
 
+video::os4mv_8jWfU[youtube]
+
+
 [TIP]
 =====
 On a Radxa you could run this script instead (mainly because the Bootsel button is a bit fiddly!)...
