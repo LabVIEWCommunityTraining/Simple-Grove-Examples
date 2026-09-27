@@ -7,21 +7,21 @@ image::GrovePicoShieldI2CConnection.png[]
 
 == Grove Gesture Sensor
 
-=== Overview
+[underline]#*Overview*#
 
 The sensor on Grove - Gesture is PAJ7620U2 that integrates gesture recognition function with general I2C interface into a single chip. It can recognize 9 basic gestures, and these gestures information can be simply accessed via the I2C bus.
 
-=== Hardware Details
+[underline]#*Hardware Details*#
 
 https://wiki.seeedstudio.com/Grove-Gesture_v1.0/[Grove - Gesture Sensor V1.0]
 
-=== Demo Video
+[underline]#*Demo Video*#
 
 This video demonstrates the gesture sensor recognising a gesture and displaying it on the front panel.
 
 video::5MPWDghnn5Q[youtube]
 
-=== Example Code
+[underline]#*Example Code*#
 
 Navigate to >>Scratchpad>>Grove>>Gadgets>>I2C GestureSensor PAJ7620U2.vi
 
@@ -46,17 +46,17 @@ image::GroveI2CGestureSensor-PAJ7620U2-BD.png[]
 
 Grove - 6-Axis Accelerometer&Gyroscope is a cost-effective Grove interfaced and integrated sensor combination of 3-axis digital accelerometer and 3-axis digital gyroscope.
 
-=== Hardware Details
+[underline]#*Hardware Details*#
 
 https://wiki.seeedstudio.com/Grove-6-Axis_AccelerometerAndGyroscope/[Grove - 6-Axis Accelerometer & Gyroscope]
 
-=== Demo Video
+*[underline]#Demo Video#*
 
 Shows the Grove - 6-Axis Accelerometer & Gyroscope showing it's axes being displayed on a graph.
 
 video::Ou9bYsspwoc[youtube]
 
-=== Example Code
+[underline]#*Example Code*#
 
 Navigate to >>Scratchpad>>Grove>>Gadgets>>I2C 6 Axis Gyro Accel LSM6D3.vi
 
@@ -78,11 +78,11 @@ image::GroveI2C-6AxisGyroAccel-LSM6D3-BD.png[]
 
 The Grove - Infrared Temperature Sensor Array (AMG8833) is a high precision infrared array sensor which based on advanced MEMS technology. It can support temperature detection of two-dimensional area: 8 × 8 (64 pixels) and maximum 7 meters detection distance.
 
-=== Hardware Details
+[underline]#*Hardware Details*#
 
 https://wiki.seeedstudio.com/Grove-Infrared_Temperature_Sensor_Array-AMG8833/[Grove - Infrared Temperature Sensor Array(AMG8833)]
 
-=== Demo Video
+[underline]#*Demo Video*#
 
 Here is a video that shows the set-up and running of the Thermal Camera
 
@@ -93,7 +93,7 @@ This video shows some of the development process
 
 video::XtYEoU-dgPk[youtube]
 
-=== Example Code
+[underline]#*Example Code*#
 
 Navigate to >>Scratchpad>>Grove>>Gadgets>>I2C Thermal Camera>>I2C Thermal Camera AMG8833 8x8.vi
 
@@ -115,17 +115,17 @@ image::GroveI2C-Thermal Camera AMG8833-8x8-BD.png[]
 
 The Grove - I2C Motor Driver V1.3 (latest version) can directly control Stepper Motor or DC Motor. Its heart is a dual channel H-bridge driver chip（L298N）that can handle current up to 2A per channel, controlled by an Atmel ATmega8L which handles the I2C communication with platforms such as Arduino. Both motors can be driven simultaneously while set to a different speed and direction. It can power two brushed DC motors or one 4-wire two-phase stepper motor. It requires a 6V to 15V power supply to power the motor and has an onboard 5V voltage regulator which can power the I2C bus and the Arduino(selectable by jumper). All driver lines are protected by diodes from back-EMF.
 
-=== Hardware Details
+[underline]#*Hardware Details*#
 
 https://wiki.seeedstudio.com/Grove-I2C_Motor_Driver_V1.3/#hardware-overview/[Grove - I2C Motor Driver V1.3]
 
-=== Demo Video DC Motor Drive
+[underline]#*Demo Video DC Motor Drive*#
 
 This video demonstrates the Grove L298 Motor Drive board used with 2 DC motors.
 
 video::j-9ya1YdSZY[youtube]
 
-=== Example Code
+[underline]#*Example Code*#
 
 Navigate to >>Scratchpad>>Grove>>Gadgets>>Motor Drive>>**I2C L298P DC Motor Drive.vi**
 
@@ -150,7 +150,7 @@ Adafruit seesaw is a near-universal converter framework which allows you to add 
 
 https://learn.adafruit.com/adafruit-seesaw-atsamd09-breakout/overview[Adafruit seesaw an I2C to ... whatever! interface]
 
-=== Hardware Details
+*[underline]#Hardware Details#*
 
 https://www.adafruit.com/product/5880[Adafruit I2C Stemma QT Rotary Encoder]
 
@@ -158,13 +158,13 @@ This board uses the Qwiic connector, so we will need to use a Qwiic to Grove lea
 
 image::QwiicToGroveConnector.png[]
 
-=== Demo Video
+*[underline]#Demo Video#*
 
 This video demonstrates the Adafruit Rotary Encoder
 
 video::bmwwQtxbOBA[youtube]
 
-=== Example Code
+[underline]#*Example Code*#
 Navigate to >>Scratchpad>>Grove>>Gadgets>>AdaFruit SeeSaw>>Encoder>>**AdafruitSeesawEncoder.vi**
 
 image::AdaFruitI2CRotaryEncoder-Project.png[]
@@ -195,14 +195,14 @@ As an example the ATSAMD09 breakout with seesaw offers
 2 x I2C address selection pins
 1 x Activity LED
 
-=== Hardware Details
+[underline]#*Hardware Details*#
 
 https://learn.adafruit.com/adafruit-seesaw-atsamd09-breakout/overview[Adafruit SeeSaw AtSAMD09 Breakout]
 
 == NeoPixel Ring
 The rotary encoder board explained earlier uses a SeeSaw enabled micro-controller that has a single neo-pixel LED. This example uses a 12 LED Neo-pixel ring.
 
-=== Hardware Details
+[underline]#*Hardware Details*#
 
 https://www.adafruit.com/product/1643[NeoPixel Ring - 12 x 5050 RGB LED with Integrated Drivers]
 
@@ -210,28 +210,28 @@ The input needs to be connected to the GPIO pin and GND and Voltage connected.
 
 image::AdafruitSeesawSAMD09NeoPixel.png[]
 
-=== Demo Video
+[underline]#*Demo Video*#
 
 This video demonstrates the Adafruit SAMD09 Running a NeoPixel 12 LED Ring
 
 video::nMGVk3nTuzY[youtube]
 
-=== Example Code
+[underline]#*Example Code*#
 Navigate to >>Scratchpad>>Grove>>Gadgets>>AdaFruit SeeSaw>>NeoPixel>>**AdafruitSeesawNeoPixel.vi**
 
 == GPIO
 The SMD09 breakout offers 7 GPIO digital pins (9,10,11,14,15,24 and 25). These can be used for Dgital Outputs or Inputs depending on the direction set.
 
-=== Hardware Details
+[underline]#*Hardware Details*#
 
 
-=== Demo Video
+[underline]#*Demo Video*#
 
 This video demonstrates the Adafruit SAMD09s GPIO functionality
 
 video::h5_qb-tfAdk[youtube]
 
-=== Example Code
+[underline]#*Example Code*#
 Navigate to >>Scratchpad>>Grove>>Gadgets>>AdaFruit SeeSaw>>GPIO>>**AdafruitSeesawGPIO.vi**
 
 == Encoder
@@ -256,21 +256,21 @@ TBD
 
 == Grove I2C Multiplexer Hub
 
-=== Overview
+[underline]#*Overview*#
 
 I2C devices must use different addresses in the same bus system. However, with the help of Grove - 8 Channel I2C Hub, you can plug up to 8 same-address I2C devices to the same Grove I2C system. All thanks to the TCA9548A I2C Multiplexer Chip. It adopts time-division multiplexing technology so that the same controller can control 8 I2C devices with the same address. No more worrying about address conflicts. This is really useful if you have a load of sensor boards with the same address.
 
-=== Hardware Details
+[underline]#*Hardware Details*#
 
 https://wiki.seeedstudio.com/Grove-8-Channel-I2C-Multiplexer-I2C-Hub-TCA9548A/[Grove - 8 Channel I2C Multiplexer/I2C Hub (TCA9548A)]
 
-=== Demo Video
+[underline]#*Demo Video*#
 
 This video demonstrates the Mux switching to 3 digipot boards with the same address
 
 video::FJp_tq6rgjo[youtube]
 
-=== Example Code
+[underline]#*Example Code*#
 
 Navigate to >>Scratchpad>>Grove>>Gadgets>>I2C Mux and Digipots.vi
 
