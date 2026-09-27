@@ -3,7 +3,7 @@
 
 Grove has a wide variety of sensors that can be communicated to using I2C.
 
-== Grove I2C Sensors
+= Grove I2C Sensors
 
 There are also options that communicate using I2C. These will use connectors I2C0 and I2C1 as shown. Commonly these will offer improved resolution e.g. 16 bits or 24 bits, so 65536 levels or 16,777,215 level respectively. They may also offer amplifiers, multiplexers or other enhanced functionality. 
 
@@ -11,21 +11,21 @@ image::GrovePicoShieldI2CConnection.png[]
 
 == Grove I2C Temperature Humidity Sensor DH20
 
-=== Overview
+[underline]#*Overview*#
 
 The Grove - Temperature & Humidity Sensor is based on the DHT20 sensor. The DH20 is an upgraded version of the DHT11, compared with the previous version, the temperature and humidity measurement accuracy are higher, and the measurement range is larger. It features I2C output which means it is easier to use.
 
-=== Hardware Details
+[underline]#*Hardware Details*#
 
 https://wiki.seeedstudio.com/Grove-Temperature-Humidity-Sensor-DH20/[Grove I2C Temperature Humidity Sensor DH20]
 
-=== Demo Video
+[underline]#*Demo Video*#
 
 Here is a video that shows the set-up and running of the Grove I2C Temperature Humidity Sensor
 
 video::ENfYFbsgunE[youtube]
 
-=== Example Code
+[underline]#*Example Code*#
 
 Navigate to >>Scratchpad>>Grove>>Sensors>>**I2C Temperature Humidity Sensor DH20.vi**
 
@@ -42,21 +42,21 @@ image::GroveI2CTemperatureHumiditySensorDH20-BD.png[]
 
 == Grove I2C Thermocouple Sensor
 
-=== Overview
+[underline]#*Overview*#
 
 The Grove - I2C Thermocouple Amplifier (MCP9600) is a thermocouple-to-digital converter with integrated cold-junction and I2C communication protocol. This module is designed to be used in conjunction with a k-type thermocouple. The thermocouples have a much larger measurement range than thermistors.
 
-=== Hardware Details
+[underline]#*Hardware Details*#
 
 https://wiki.seeedstudio.com/Grove-I2C_Thermocouple_Amplifier-MCP9600/[Grove I2C Thermocouple Amplifier MCP9600]
 
-=== Demo Video
+[underline]#*Demo Video*#
 
 Here is a video that shows the set-up and running of the Grove I2C Thermocouple Amplifier MCP9600
 
 video::BdaQqxTZXwk[youtube]
 
-=== Example Code
+[underline]#*Example Code*#
 
 Navigate to >>Scratchpad>>Grove>>Sensors>>**I2C Thermocouple MCP9600.vi**
 
@@ -74,13 +74,13 @@ image::GroveI2CThermocoupleAmpMCP9600-BD.png[]
 
 == Adafruit NAU7802 I2C Strain Gauge Module
 
-=== Overview
+[underline]#*Overview*#
 
 A strain gauge (also spelled strain gage) is a device used to measure strain on an object. Invented by Edward E. Simmons and Arthur C. Ruge in 1938, the most common type of strain gauge consists of an insulating flexible backing which supports a metallic foil pattern. As the object is deformed, the foil is deformed, causing its electrical resistance to change. This resistance change, usually measured using a Wheatstone bridge, is related to the strain by the quantity known as the gauge factor.
 
 From https://en.wikipedia.org/wiki/Strain_gauge[Wikipedia]
 
-=== Hardware Details
+[underline]#*Hardware Details*#
 
 The NAU7802 module contains a super-high-resolution 24-Bit differential ADC with extra gain and calibration circuitry that makes it perfect for measuring strain gauges / load cells or other sensors that have four wires that are connected in a Wheatstone bridge arrangement.
 
@@ -102,13 +102,13 @@ The wiring diagram for the board will therefore look like this.
 
 image::NAU7802Wiring.png[]
 
-=== Demo Video
+[underline]#*Demo Video*#
 
 Here is a video that shows the set-up and running of the Adafruit NAU7802 I2C Strain Gauge Module
 
 video::dy8eHkbQ16g[youtube]
 
-=== Example Code
+[underline]#*Example Code*#
 
 Navigate to >>Scratchpad>>Grove>>Sensors>>**I2C NAU7802 Strain 24 Bit Gauge.vi**
 

@@ -11,7 +11,7 @@ image::GrovePicoShieldI2CConnection.png[]
 
 The LCD display is a useful, robust low power way show system information. The RGB backlight also can convey extra information like Warnings and Alerts.
 
-=== Hardware Details
+[underline]#*Hardware Details*#
 
 https://wiki.seeedstudio.com/Grove-LCD_RGB_Backlight/[Grove - LCD RGB Backlight]
 
