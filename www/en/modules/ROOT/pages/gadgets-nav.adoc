@@ -301,11 +301,15 @@ DFRobot's Gravity Quectel-L76K GNSS positioning module supports single and multi
 
 https://wiki.dfrobot.com/tel0157[DFRobot Gravity Quectel-L76K GNSS GPS]
 
+You will need to convert the Grove connector to a DFRobot Gravity (these leads are available from thepihut in the UK).
+
+image::GroveDFRobotL76KGPSWiring.png[]
+
 [underline]#*Demo Video*#
 
-This video demonstrates the GPS module finding a satellite and showing it on https://www.openstreetmap.org/search?query=Whitchurch+Hampshire&zoom=12&minlon=4.135322570800782&minlat=50.73384764465464&maxlon=4.7344207763671875&maxlat=50.90151722768345#map=15/51.23145/-1.32872[OpenStreetMap]
+This video demonstrates the GPS module finding a satellite and showing it on https://www.openstreetmap.org[OpenStreetMap]
 
-video::FJp_tq6rgjo[youtube]
+video::IRTB18yyHfU[youtube]
 
 [underline]#*Example Code*#
 
