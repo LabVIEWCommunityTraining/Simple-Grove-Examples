@@ -35,7 +35,7 @@ I've only implemented and tested the basic functionality for this board, so Writ
 
 image::GroveRGBI2CLCDFP.png[]
 
-dictates the GPIO Pin for the IC2 Port. We set up the IC2 port for the device in **Grove I2C LCD.lvclass:Init.vi** and **Grove I2C RGB SGM31323.lvclass:Init.vi**. Next we loop round the event structure and wait for a button on the Front Panel to be pressed. When a button is detected (event:button>>Value Change will fire) the associated VI will run. Explore the different events to see how they operate. Pressing Stop will fire the Stop event and exit the loop.
+dictates the GPIO Pin for the IC2 Port. We set up the IC2 port for the device in *Grove I2C LCD.lvclass:Init.vi* and *Grove I2C RGB SGM31323.lvclass:Init.vi*. Next we loop round the event structure and wait for a button on the Front Panel to be pressed. When a button is detected (event:button>>Value Change will fire) the associated VI will run. Explore the different events to see how they operate. Pressing Stop will fire the Stop event and exit the loop.
 
 image::GroveRGBI2CLCDBD.png[]
 
@@ -62,7 +62,7 @@ video::8r_H04guJeg[youtube]
 
 [underline]#*Example Code*#
 
-Navigate to >>Scratchpad>>Grove>>Displays>>**I2C Grove 64x128OLED_SSD1315_Graph.vi**
+Navigate to >>Scratchpad>>Grove>>Displays>>*I2C Grove 64x128OLED_SSD1315_Graph.vi*
 
 image::GroveOLED64x128-SSD1315-GraphProject.png[]
 
@@ -74,7 +74,7 @@ image::GroveOLED64x128-SSD1315-GraphFP.png[]
 
 On the block diagram you can see that the selected Grove connector dictates the GPIO Pin used by the I2C port.
 
-We set up the IC2 port for the device in **64x128 I2C OLED SSD1315.lvclass:Init.vi**, this VI also outputs a picture of the correct dimensions as a template. The While Loop will now iterate every 200msecs adding a random number to the 100 element rolling buffer. This buffer is input to Plot XY.vi that creates the picture to fit our template. This picture is input into **64x128 I2C OLED SSD1315.lvclass:Write Image.vi** that converts and transmits all the I2C messages.
+We set up the IC2 port for the device in *64x128 I2C OLED SSD1315.lvclass:Init.vi*, this VI also outputs a picture of the correct dimensions as a template. The While Loop will now iterate every 200msecs adding a random number to the 100 element rolling buffer. This buffer is input to Plot XY.vi that creates the picture to fit our template. This picture is input into *64x128 I2C OLED SSD1315.lvclass:Write Image.vi* that converts and transmits all the I2C messages.
 
 Pressing Stop will exit the loop.
 
@@ -107,7 +107,7 @@ image::GroveOLED64x48-SSD1306-GraphFP.png[]
 
 On the block diagram you can see that the selected Grove connector dictates the GPIO Pin used by the I2C port.
 
-We set up the IC2 port for the device in **64x48 I2C OLED SSD1306.lvclass:Init.vi**, this VI also outputs a picture of the correct dimensions as a template. The While Loop will now iterate every 200msecs adding a random number to the 100 element rolling buffer. This buffer is input to Plot XY.vi that creates the picture to fit our template. This picture is input into **64x48 I2C OLED SSD1306.lvclass:Write Image.vi** that converts and transmits all the I2C messages.
+We set up the IC2 port for the device in *64x48 I2C OLED SSD1306.lvclass:Init.vi*, this VI also outputs a picture of the correct dimensions as a template. The While Loop will now iterate every 200msecs adding a random number to the 100 element rolling buffer. This buffer is input to Plot XY.vi that creates the picture to fit our template. This picture is input into *64x48 I2C OLED SSD1306.lvclass:Write Image.vi* that converts and transmits all the I2C messages.
 
 Pressing Stop will exit the loop.
 
@@ -131,7 +131,7 @@ video::IMQMEPpHomw[youtube]
 
 [underline]#*Example Code*#
 
-Navigate to >>Scratchpad>>Grove>>Displays>>**I2C Grove 8x8Matrix LED.vi**
+Navigate to >>Scratchpad>>Grove>>Displays>>*I2C Grove 8x8Matrix LED.vi*
 
 image::GroveI2C8x8MatrixLEDDriver-Project.png[]
 
@@ -141,7 +141,7 @@ Various pre-programed examples are available by selecting Set Scrolling Text, Se
 
 image::GroveI2C8x8MatrixLEDDriver-FP.png[]
 
-We set up the IC2 port for the device in **Grove I2C Matrix LED Driver.lvclass:Init**
+We set up the IC2 port for the device in *Grove I2C Matrix LED Driver.lvclass:Init*
 
 On the block diagram you can see that the selected Grove connector dictates the GPIO Pin for the I2C Connector. Next we loop round an event structure and use the detect button value change events for Set Char, Set Icon or Set Custom Char. The fired event will use the associated data as an input to the selected function.
 In the timeout loop we can set or stop the scrolling function by toggling the Set Scrolling Text Button. The buffer is updated on a Scrolling Text Value change event.
@@ -168,7 +168,7 @@ video::OjOcmV7EbRs[youtube]
 
 [underline]#*Example Code*#
 
-Navigate to >>Scratchpad>>Grove>>Displays>>**I2C Grove 8x8 RGB Matrix LED Examples.vi**
+Navigate to >>Scratchpad>>Grove>>Displays>>*I2C Grove 8x8 RGB Matrix LED Examples.vi*
 
 image::Grove8x8RGBLEDExamplesProject.png[]
 
@@ -180,7 +180,7 @@ Set Emoji or Set Animation will display your selected Emoji or Animation.
 
 image::Grove8x8RGBLEDExamplesFP.png[]
 
-We set up the IC2 port for the device in **Grove 2 RGB LED Matrix.lvclass:Init**
+We set up the IC2 port for the device in *Grove 2 RGB LED Matrix.lvclass:Init*
 
 
 On the block diagram you can see that the selected Grove connector dictates the GPIO Pin for the I2C Connector. Next we loop round an event structure and use the detect button value change events for Set Number, Set String, Set Emojo or Set Animation. The fired event will use the associated data as an input to the selected function. 
@@ -208,7 +208,7 @@ video::rFduyVa79vk[youtube]
 
 [underline]#*Example Code*#
 
-Navigate to >>Scratchpad>>Grove>>Displays>>**I2C Grove AlphaNumeric LED.vi**
+Navigate to >>Scratchpad>>Grove>>Displays>>*I2C Grove AlphaNumeric LED.vi*
 
 image::GroveQuadAlphaNumericDisplayProject.png[]
 
@@ -218,7 +218,7 @@ Enter 4 numbers or 4 Characters and press Set Number or Set Characters
 
 image::GroveQuadAlphaNumericDisplayBD.png[]
 
-We set up the IC2 port for the device in **HT16K33 LED Driver.lvclass:Init**
+We set up the IC2 port for the device in *HT16K33 LED Driver.lvclass:Init*
 
 
 On the block diagram you can see that the selected Grove connector dictates the GPIO Pin for the I2C Connector. Next we loop round an event structure and use the detect button value change events for Set Number or Set Characters. The fired event will use the associated data as an input to the selected function. 
