@@ -4,7 +4,7 @@
 
 * xref:what-is-grove.adoc[What is Grove]
 
-* xref:cti-visa-commands[CTI VISA SCPI Command Manual]
+* xref:cti-visa-commands-nav.adoc[CTI VISA SCPI Command Manual]
 
 * xref:digital-outputs-nav.adoc[Digital Output Examples]
 
