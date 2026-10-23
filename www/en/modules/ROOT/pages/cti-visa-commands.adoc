@@ -1,0 +1,220 @@
+= CTI VISA Commands
+:page-toclevels: 2
+
+== Analog Input
+
+*Enables the selected Analog Input Channel*
+
+CTI.lvlib:VisaComms.lvclass:AI Init.vi
+
+ANAlog:INput<0|1|2>:ENable
+
+ANA:IN<0|1|2>:EN
+
+ANA:IN1:EN - Enables Analog Input on 
+
+*Reads the value of the selected Analog Input Channel*
+
+CTI.lvlib:VisaComms.lvclass:AI Read Value.vi
+
+ANAlog:INput<0|1|2>:VALue?"
+
+ANA:IN<0|1|2>:VAL?
+
+ANA:IN2:VAL? - Reads Analog Input 2 and returns a U16 integer
+        
+== Analog Output (PWM)
+
+*Initialises a PWM channel*
+
+CTI.lvlib:VisaComms.lvclass:PWM Init.vi
+
+PWM%d:INIT <Phase-Correct = 0|1>,<enable = 0|1>
+
+PWM0:INIT 0,1 -  enables PWM in A0
+
+*Set PWM duty cycle*
+
+CTI.lvlib:VisaComms.lvclass:PWM Write Duty.vi
+
+PWM<0|1|2>:DUTY %.;<0-1>
+
+PWM2:DUTY 0.500000 - Sets the duty cycle to an equal square wave on A2
+
+*Get PWM duty cycle*
+
+CTI.lvlib:VisaComms.lvclass:PWM Read Duty.vi
+
+PWM<0|1|2>:DUTY?
+
+PWM2:DUTY? -Gets the duty cycle from A2
+
+*Set PWM Frequency*
+
+CTI.lvlib:VisaComms.lvclass:PWM  Write Frequency.vi
+
+PWM<0|1|2>:FREQ <frequency in Hz>
+
+PWM0:FREQ 2000.000000 - sets the PWM frequency on A0 to 2kHz
+
+*Get PWM Frequency*
+
+CTI.lvlib:VisaComms.lvclass:PWM  Read Frequency.vi
+
+PWM<0|1|2>:FREQ?
+
+PWM0:FREQ? - Gets the PWM frequency on A0
+
+*Enable/Disable PWM Channel*
+
+CTI.lvlib:VisaComms.lvclass:PWM Write Enable.vi
+
+PWM<0|1|2>:ENable <disable = 0| enable = 1>
+
+PWM1:EN 1 - Enables PWM on A1
+
+== Digital Input/Output	
+
+*Set Digital Pin Direction*
+
+CTI.lvlib:VisaComms.lvclass:GPIO Write Direction.vi
+
+DIGital:PIN<16|17|18|19|20|21>:DIRection
+
+DIG:PIN16:DIR In - set GPIO pin 16 to digital input
+
+*Set Digital Pin Pull Up Resistor*
+
+CTI.lvlib:VisaComms.lvclass:GPIO Write Pull.vi
+
+DIGital:PIN<16|17|18|19|20|21>:PULL <None|Up|Down|Both>
+
+DIG:PIN20:PULL None - Sets no resistors
+
+DIG:PIN20:PULL Up - Sets Pull Up resistor
+
+DIG:PIN20:PULL Down - Sets Pull Down resistor
+
+DIG:PIN20:PULL Both - Sets both Pull-up and Pull-Down resistors
+
+*Set Digital Output*
+
+CTI.lvlib:VisaComms.lvclass:GPIO Write Value.vi
+
+DIGital:PIN<16|17|18|19|20|21>:VALue
+
+DIG:PIN17:VAL 1 - Set GPIO pin 17 to TRUE
+
+*Get Digital Output*
+
+CTI.lvlib:VisaComms.lvclass:GPIO Read Value.vi
+
+DIGital:PIN<16|17|18|19|20|21>:VALue?
+
+DIG:PIN18:VAL? - Get GPIO pin 17 value returns <0 = false|1 = true>
+
+	
+== I2C Communications
+
+*Set Up and Initialise I2C Port*
+
+CTI.lvlib:VisaComms.lvclass:I2C Init.vi
+
+COMM:I2C<0|1>:INIT <baud = 400000|1000000>, <SCL GPIO Pin>, <SDA GPIO Pin>
+
+COMM:I2C0:INIT 1000000,9,8 - sets the baud rate to 1M and the I2C pins for the I2C0 connector on the grove board
+
+*Write I2C Data*
+
+CTI.lvlib:VisaComms.lvclass:I2C Write Data.vi
+
+COMM:I2C<0|1>:DATA <Address>,#<length of text length><length of text><text>,<NoStop(F) = 0|1>
+
+COMM:I2C1:DATA 18,#15hello,0 - Send "hello" out of I2C1 for address 18 (x12)
+
+*Read I2C Data*
+
+CTI.lvlib:VisaComms.lvclass:I2C Read Data.vi
+
+COMM:I2C<0|1>:DATA? <Address>,<length of text>,<NoStop(F) = 0|1>
+
+COMM:I2C1:DATA? 6,25,0 - Read 25 chars from I2C1 and address 6
+
+== SPI Communications
+
+*Set Up and Initialise SPI Port*
+
+CTI.lvlib:VisaComms.lvclass:SPI Init.vi
+
+COMM:SPI<0>:INIT <baud = 500000|1000000>,<mode 0>,<Data Bits 7,8>,<TX GPIO Pin>,<RX GPIO Pin>,<SCK GPIO Pin>
+
+COMM:SPI0:INIT 1000000,0,8,7,4,6 sets the baud rate to 1M and the SPI pins for the ISPI connector on the grove board
+
+*Write SPI Data*
+
+CTI.lvlib:VisaComms.lvclass:SPI Write Data.vi
+
+COMM:SPI<0>:DATA #<length of text length><length of text><text>
+
+COMM:SPI0:DATA #15hello - Send "hello" out of SPI0
+
+*Read SPI Data*
+
+CTI.lvlib:VisaComms.lvclass:SPI Read Data.vi
+
+COMM:SPI<0>:DATA? <length of text>
+
+COMM:SPI0:DATA? 25 - Read 25 chars from SPI port
+
+== UART Communications
+
+*Set Up and Initialise UART Port*
+
+CTI.lvlib:VisaComms.lvclass:UART Init.vi
+
+COMM:UART<0|1>:INIT <baud = 9600-115200>,<TX GPIO Pin>,<RX GPIO Pin>{,<Optional termination char>}
+
+COMM:UART0:INIT 115200,16,17,10 sets the baud rate to 115200 and the UART pins for the UART0 connector on the grove board. Optionally sets a termination character.
+
+*Write SPI Data*
+
+CTI.lvlib:VisaComms.lvclass:UART Write Data.vi
+
+COMM:UART<0|1>:DATA #<length of text length><length of text><text>
+
+COMM:UART1:DATA #15hello - Send "hello" out of UART0
+
+*Read UART Data*
+
+CTI.lvlib:VisaComms.lvclass:UART Read Data.vi
+
+COMM:UART<0|1>:DATA? <length of text>
+
+COMM:UART1:DATA? 25 - Read 25 chars from UART port
+
+== SCPI Register Commands
+
+ *CLS
+ 
+ *ESE
+ 
+ *ESR
+ 
+ *IDN
+ 
+ *OPC
+ 
+ *RST
+ 
+ *SRE
+ 
+ *STB
+ 
+ *WAI
+ 
+ SYSTem:ERRor
+ 
+ STATus:USER
+ 
+ STATus:SOURce
+ 
