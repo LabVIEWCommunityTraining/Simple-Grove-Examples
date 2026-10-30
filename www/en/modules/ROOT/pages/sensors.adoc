@@ -123,4 +123,37 @@ Next we loop round the event structure and use the timeout to poll the Sensors u
 
 image::NAU7802I2CStrainGaugeModule-BD.png[]
 
+== M5Stack Ultrasonic-I2C
+
+[underline]#*Overview*#
+
+Range sensing has many uses in robotics, this sensor is an inexpensive and well packaged, Grove compatible option.
+
+https://docs.m5stack.com/en/unit/Unit_Ultrasonic-I2C[I2C Ultrasonic Range Sensor]
+
+[underline]#*Hardware Details*#
+
+The Unit Ultrasonic-I2C is an ultrasonic distance measurement sensor with an I2C communication interface. The hardware utilizes the RCWL-9620 ultrasonic distance measurement chip paired with a 16 mm probe, enabling precise distance measurement within a range of 2 cm to 450 cm
+
+[underline]#*Demo Video*#
+
+Here is a video that shows the set-up and running of the M5stack Ultrasonic Range Sensor.
+
+video::j6oETbzkzSo[youtube]
+
+[underline]#*Example Code*#
+
+Navigate to >>Scratchpad>>Grove>>Sensors>>**I2C M5Stack Ultrasonic.vi**
+
+image::M5StackUltrasonicRangeSensorProject.png[]
+
+This VI uses RCWL-9620 IC. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+
+image::M5StackUltrasonicRangeSensorFP.png[]
+
+On the block diagram you can see that the selected Grove connector is input into *M5Stack UltraSonic Range Sensor.lvclass:Init.vi*.
+Next we loop round the event structure and use the timeout to poll the Sensor. If a reading is available we get the 24 bits using *M5Stack UltraSonic Range Sensor.lvclass:Read Range.vi*. Pressing Stop will fire the Stop event and exit the loop.
+
+image::M5StackUltrasonicRangeSensorBD.png[]
+
 

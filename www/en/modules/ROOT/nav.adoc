@@ -20,6 +20,3 @@
 
 * xref:gadgets-nav.adoc[Misc Gadgets Examples]
 
-
-
-
