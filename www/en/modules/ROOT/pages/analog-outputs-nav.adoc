@@ -121,3 +121,49 @@ image::MCP4018DigitalPotentiometerFP.png[]
 On the block diagram you can see that the selected Grove connector dictates the GPIO Pin for the IC2 Port. We set up the IC2 port for the device in **Init.vi**. Next we loop round the event structure and wait for a Sliders V0 to be changed. When change has been detected the new values are input into the **Write Pot.vi**.  Pressing Stop will fire the Stop event and exit the loop.
 
 image::MCP4018DigitalPotentiometerBD.png[]
+
+== M5Stack I2C 8 Channel Servo
+
+https://www.sparkfun.com/servos[Here is a good article on servos]
+
+[underline]#*Overview*#
+
+A servo will respond to a PWM pulse sent at a known frequency (50Hz typically)
+
+This neat M5Stack module is connected to either I2C0 and I2C1. 
+
+image::GrovePicoShieldI2CConnection.png[]
+
+Extra power handling is available on the connector and experiments have shown it kicks in at above 7.5Vdc. This will drive higher power servos than a Pico could drive on it's own. Check out the module documentation for specifications
+
+[underline]#*Hardware Details*#
+
+https://docs.m5stack.com/en/unit/Unit_8Servos[M5Stack 8 Channel I2C Servo Module]
+
+[underline]#*Demo Video*#
+
+Here is a video that shows the set-up and running of the M5Stack DAC2
+
+video::KhWh9l7JJ1Y[youtube]
+
+[underline]#*Example Code*#
+
+Navigate to >>Scratchpad>>Grove>>Analog Output PWM>>I2C M5Stack 8Channel Servo>>**I2C An Out M5Stack8ChServo.vi**
+
+image::M5StackI2C8ChPWMProject.png[]
+
+This particular VI uses the M5Stack to give us 8 channels of 8 bit PWM Servo Output (0-180 degrees). Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+
+image::M5StackI2C8ChPWMFP.png[]
+
+On the block diagram you can see that the selected Grove connector dictates the GPIO Pin for the IC2 Port. We set up the IC2 port for the device in **Init.vi**. 
+
+This module has multiple uses in the firmware. I assume you can buy a module for a specific purpose, but haven't tested the theory yet.
+
+After initialising the module we need therefore to set it's mode for each channel. Next we set the frequency in groups of 4 channels, 50 Hz is the norm for servos.
+
+Next we loop round the event structure and wait for a Sliders Ch0 to Ch7 to be changed. When change has been detected the new values are input into the **Set Servo Angle.vi**.  Pressing Stop will fire the Stop event and exit the loop.
+
+image::M5StackI2C8ChPWMBD.png[]
+
+

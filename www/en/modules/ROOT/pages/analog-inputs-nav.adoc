@@ -78,20 +78,22 @@ On the block diagram you can see that the selected Grove connector is input into
 
 image::GroveThumbJoystick-BD.png[]
 
-= Grove I2C Analog Inputs
+= I2C Analog Inputs
 
 There are also options that communicate using I2C. These will use connectors I2C0 and I2C1 as shown. Commonly these will offer improved resolution e.g. 16 bits or 24 bits, so 65536 levels or 16,777,215 level respectively. They may also offer amplifiers, multiplexers or other enhanced functionality. 
 
 image::GrovePicoShieldI2CConnection.png[]
 
-== Grove I2C 4 Channel 16 Bit Analog Input
+== ADS1x15 I2C 4 Channel Analog Input
 
 [underline]#*Overview*#
-This module provides 4 channels with 16 bit resolution and programmable gain.
+This family of modules provides 4 channels with 12 or 16 bit resolution and programmable gain.
 
 [underline]#*Hardware Details*#
 
-https://wiki.seeedstudio.com/Grove-16-bit-ADC-ADS1115/[Grove I2C 4 Channel 16 Bit Analog Input]
+https://wiki.seeedstudio.com/Grove-16-bit-ADC-ADS1115/[Grove I2C ADS1115 4 Channel 16 Bit Analog Input]
+
+https://www.adafruit.com/product/1083[Adafruit I2C ADS5015 4 Channel 12 Bit  Analog Input]
 
 [underline]#*Demo Video*#
 
@@ -102,17 +104,17 @@ video::_xpF_2K6F94[youtube]
 
 *[underline]#Example Code#*
 
-Navigate to >>Scratchpad>>Grove>>Sensors>>**I2C 4 Channel An In ADS1115.vi**
+Navigate to >>Scratchpad>>Grove>>Analog Inputs>>I2C An Ins>>**I2C 4 Channel An In ADS1x15.vi**
 
-image::GroveADS11154ChanADCProject.png[]
+image::GroveADS1x154ChanADCProject.png[]
 
 In this example we will need to have a voltage source to show a change in signal. Here I've just wired a potentiometer to the 5V and Ground on the board.
 
-This VI uses ADS1115 4 Channels Analog Input Module. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
+This VI communicates to ADS1x15 4 Channels Analog Input Modules. Select the port for the connected Pico and the Grove connector that the board is plugged into. Press the run arrow.
 
-image::GroveADS11154ChanADCFP.png[]
+image::GroveADS1x154ChanADCFP.png[]
 
 On the block diagram you can see that the selected Grove connector is input into *Configure AI.vi*. Next we loop round the event structure and use the timeout to poll the selected analog input using **AI Read Value.vi**. Pressing Stop will fire the Stop event and exit the loop.
 
-image::GroveADS11154ChanADCBD.png[]
+image::GroveADS1x154ChanADCBD.png[]
 
